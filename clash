@@ -6,10 +6,10 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 🇭🇰 香港A|tg频道:@ripaojiedian, server: xiao.miaoge.gay, port: 443, type: vmess, uuid: 8a0e0eed-3294-42cb-982f-b3bb949c5a4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: xiao.miaoge.gay}}}
-  - {name: 🇨🇳 台湾3|tg频道:@ripaojiedian, server: 124.71.16.99, port: 12351, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, sni: 124.71.16.99, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾高速|tg频道:@ripaojiedian, server: 124.71.16.99, port: 12352, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, sni: 124.71.16.99, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾2|tg频道:@ripaojiedian, server: 120.195.181.72, port: 12352, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, sni: 120.195.181.72, skip-cert-verify: false}
-  - {name: 🇯🇵 日本专线|tg频道:@ripaojiedian, server: zfd-moblev2.gatknqh.cn, port: 16119, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾3|tg频道:@ripaojiedian, server: 124.71.16.99, port: 12351, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, sni: 124.71.16.99, skip-cert-verify: true}
+  - {name: 🇨🇳 台湾高速|tg频道:@ripaojiedian, server: 124.71.16.99, port: 12352, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, sni: 124.71.16.99, skip-cert-verify: true}
+  - {name: 🇨🇳 台湾2|tg频道:@ripaojiedian, server: 120.195.181.72, port: 12352, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, sni: 120.195.181.72, skip-cert-verify: true}
+  - {name: 🇯🇵 日本专线|tg频道:@ripaojiedian, server: zfd-moblev2.gatknqh.cn, port: 16119, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
   - {name: 🇯🇵 日本优化|tg频道:@ripaojiedian, server: 99jp.tfzhc.top, port: 44311, type: trojan, password: 82bd7228-81e2-421f-ac42-a205917b467c, sni: 99jp.tfzhc.top, skip-cert-verify: false}
   - {name: 🇭🇰 香港1|tg频道:@ripaojiedian, server: 47.243.124.141, port: 41179, type: vmess, uuid: a50b1dc4-03ce-44d8-a5c4-f4753c57884e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇨🇳 台湾原生|tg频道:@ripaojiedian, server: node.a.access.in.nyapi.buzz, port: 45394, type: vmess, uuid: 41dc43fd-3f55-4c95-94d5-7de595ff6a29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: live.bilibili.com}}}
