@@ -5,125 +5,237 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本2|tg频道:@ripaojiedian, server: trs06.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: trs06.bolab.net, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HKT|tg频道:@ripaojiedian, server: download1hkt.windowsupdate1.com, port: 28443, type: trojan, password: 8fe3b905-b933-4a3f-aa33-40a73ec93c69, sni: glc.hruqoaw.cn, skip-cert-verify: false}
-  - {name: 🇯🇵 日本内网|tg频道:@ripaojiedian, server: 111.45.22.151, port: 9036, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾Hinet|tg频道:@ripaojiedian, server: download1tw.windowsupdate1.com, port: 28443, type: trojan, password: 8fe3b905-b933-4a3f-aa33-40a73ec93c69, sni: glc.hruqoaw.cn, skip-cert-verify: false}
-  - {name: 🇯🇵 日本东京|tg频道:@ripaojiedian, server: trs01.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: trs01.bolab.net, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国-tg频道:@ripaojiedian, server: 144.24.90.94, port: 28443, type: trojan, password: 8fe3b905-b933-4a3f-aa33-40a73ec93c69, sni: glc.hruqoaw.cn, skip-cert-verify: false}
-  - {name: 🇺🇸 美国-tg频道:@ripaojiedian, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}}
-  - {name: 🇯🇵 东京|优选|tg频道:@ripaojiedian, server: 172.64.156.100, port: 443, type: vmess, uuid: d1a2c5fe-b996-46df-bcb4-26f339b6dc61, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.mochen1314.ga}}}
-  - {name: 🇯🇵 东京2|tg频道:@ripaojiedian, server: trs02.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: trs02.bolab.net, skip-cert-verify: false}
+  - {name: 🇸🇬 永久免费更新, server: ecdyd-1049-v2-7.hkg-r-kcd-c.ap.cjhh.beauty, port: 29938, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: s3.cjhh.beauty}}}
+  - {name: 🇭🇰 香港专线|tg频道:@ripaojiedian, server: venus.cn.iepl.hdsky.org, port: 31039, type: ss, cipher: chacha20-ietf-poly1305, password: 3636f852-2b49-489f-bbcd-38bd1cac1fe7}
+  - {name: 🇭🇰 香港高速|tg频道:@ripaojiedian, server: i2.go001.buzz, port: 15511, type: ss, cipher: chacha20-ietf-poly1305, password: 43fb1bac-1ebb-4d27-97a7-3a8f6e137aa4}
+  - {name: 🇨🇳 台湾2|tg频道:@ripaojiedian, server: download1tw.windowsupdate1.com, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, sni: glc.hruqoaw.cn, skip-cert-verify: false}
+  - {name: 🇭🇰 香港IPLC|tg频道:@ripaojiedian, server: hk1.iplc.v2node.com, port: 15443, type: vmess, uuid: 5ccee8dd-1a7c-4086-ae8f-5bf9fc939b43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.iplc.v2node.com}}}
+  - {name: 🇭🇰 香港直连|tg频道:@ripaojiedian, server: hk1cmi.nicevpns.com, port: 443, type: trojan, password: c75351b6-457f-45d9-89ee-d19c0d1d763a, sni: hk1cmi.nicevpns.com, skip-cert-verify: false}
+  - {name: 🇯🇵 日本01|tg频道:@ripaojiedian, server: jp1-snxa-s56f-x84a-s41f.paolu.pics, port: 22031, type: trojan, password: 9481e66d-3dc3-4a79-a298-5c09f3e70484, sni: jp1-snxa-s56f-x84a-s41f.paolu.pics, skip-cert-verify: false}
+  - {name: 🇯🇵 日本1|tg频道:@ripaojiedian, server: 1009jp.tfzhc.top, port: 80, type: trojan, password: 1a17faee-e35d-48e8-9708-e0a7b7ef04a1, sni: 1009jp.tfzhc.top, skip-cert-verify: false}
+  - {name: 🇯🇵 日本3|tg频道:@ripaojiedian, server: 54.248.170.38, port: 443, type: vmess, uuid: 1a17faee-e35d-48e8-9708-e0a7b7ef04a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 日本东京-tg频道:@ripaojiedian, server: 141.147.191.85, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, sni: glc.hruqoaw.cn, skip-cert-verify: false}
   - {name: 🇯🇵 日本快|tg频道:@ripaojiedian, server: 172.105.239.241, port: 443, type: vmess, uuid: 3706161f-3ee3-48e5-bfcf-0d856cc6f0ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /down, headers: {Host: js.adbse.xyz}}}
+  - {name: 🇭🇰 香港BGP|tg频道:@ripaojiedian, server: 16.162.106.78, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, sni: wel-hk.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇸🇬 狮城高速|tg频道:@ripaojiedian, server: i2.go001.buzz, port: 15541, type: ss, cipher: chacha20-ietf-poly1305, password: 43fb1bac-1ebb-4d27-97a7-3a8f6e137aa4}
+  - {name: 🇭🇰 香港HKT|tg频道:@ripaojiedian, server: 16.162.106.78, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, sni: wel-hkt.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国1|tg频道:@ripaojiedian, server: 13.124.168.115, port: 443, type: vmess, uuid: 1a17faee-e35d-48e8-9708-e0a7b7ef04a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 日本内网|tg频道:@ripaojiedian, server: 111.45.22.151, port: 9036, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾HiNet|tg频道:@ripaojiedian, server: 16.162.106.78, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, sni: wel-tw.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇺🇸 美国-tg频道:@ripaojiedian, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}}
+  - {name: 🇯🇵 日本|tg频道:@ripaojiedian, server: 16.162.106.78, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, sni: wel-jp.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国KR|tg频道:@ripaojiedian, server: 16.162.106.78, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, sni: wel-kr.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇯🇵 东京|优选|tg频道:@ripaojiedian, server: 172.64.156.100, port: 443, type: vmess, uuid: d1a2c5fe-b996-46df-bcb4-26f339b6dc61, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.mochen1314.ga}}}
+  - {name: 🇸🇬 狮城|tg频道:@ripaojiedian, server: 1002hk1326.tfzhc.top, port: 443, type: trojan, password: 1a17faee-e35d-48e8-9708-e0a7b7ef04a1, sni: 1002hk1326.tfzhc.top, skip-cert-verify: false}
+  - {name: 🇯🇵 东京2|tg频道:@ripaojiedian, server: trs02.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: trs02.bolab.net, skip-cert-verify: false}
+  - {name: 🇺🇸 美国us|tg频道:@ripaojiedian, server: us-02.bestlink.ml, port: 15029, type: ss, cipher: aes-256-gcm, password: b639e8a7-8fee-4d28-9d5b-2e8ea92f0c30}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 日本2|tg频道:@ripaojiedian
-      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
-      - 🇯🇵 日本内网|tg频道:@ripaojiedian
-      - 🇨🇳 台湾Hinet|tg频道:@ripaojiedian
-      - 🇯🇵 日本东京|tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@ripaojiedian
-      - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
-      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇸🇬 永久免费更新
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 🇭🇰 香港高速|tg频道:@ripaojiedian
+      - 🇨🇳 台湾2|tg频道:@ripaojiedian
+      - 🇭🇰 香港IPLC|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
+      - 🇯🇵 日本01|tg频道:@ripaojiedian
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇯🇵 日本3|tg频道:@ripaojiedian
+      - 🇯🇵 日本东京-tg频道:@ripaojiedian
       - 🇯🇵 日本快|tg频道:@ripaojiedian
+      - 🇭🇰 香港BGP|tg频道:@ripaojiedian
+      - 🇸🇬 狮城高速|tg频道:@ripaojiedian
+      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
+      - 🇰🇷 韩国1|tg频道:@ripaojiedian
+      - 🇯🇵 日本内网|tg频道:@ripaojiedian
+      - 🇨🇳 台湾HiNet|tg频道:@ripaojiedian
+      - 🇺🇸 美国-tg频道:@ripaojiedian
+      - 🇯🇵 日本|tg频道:@ripaojiedian
+      - 🇰🇷 韩国KR|tg频道:@ripaojiedian
+      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇺🇸 美国us|tg频道:@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本2|tg频道:@ripaojiedian
-      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
-      - 🇯🇵 日本内网|tg频道:@ripaojiedian
-      - 🇨🇳 台湾Hinet|tg频道:@ripaojiedian
-      - 🇯🇵 日本东京|tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@ripaojiedian
-      - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
-      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇸🇬 永久免费更新
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 🇭🇰 香港高速|tg频道:@ripaojiedian
+      - 🇨🇳 台湾2|tg频道:@ripaojiedian
+      - 🇭🇰 香港IPLC|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
+      - 🇯🇵 日本01|tg频道:@ripaojiedian
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇯🇵 日本3|tg频道:@ripaojiedian
+      - 🇯🇵 日本东京-tg频道:@ripaojiedian
       - 🇯🇵 日本快|tg频道:@ripaojiedian
+      - 🇭🇰 香港BGP|tg频道:@ripaojiedian
+      - 🇸🇬 狮城高速|tg频道:@ripaojiedian
+      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
+      - 🇰🇷 韩国1|tg频道:@ripaojiedian
+      - 🇯🇵 日本内网|tg频道:@ripaojiedian
+      - 🇨🇳 台湾HiNet|tg频道:@ripaojiedian
+      - 🇺🇸 美国-tg频道:@ripaojiedian
+      - 🇯🇵 日本|tg频道:@ripaojiedian
+      - 🇰🇷 韩国KR|tg频道:@ripaojiedian
+      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇺🇸 美国us|tg频道:@ripaojiedian
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本2|tg频道:@ripaojiedian
-      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
-      - 🇯🇵 日本内网|tg频道:@ripaojiedian
-      - 🇨🇳 台湾Hinet|tg频道:@ripaojiedian
-      - 🇯🇵 日本东京|tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@ripaojiedian
-      - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
-      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇸🇬 永久免费更新
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 🇭🇰 香港高速|tg频道:@ripaojiedian
+      - 🇨🇳 台湾2|tg频道:@ripaojiedian
+      - 🇭🇰 香港IPLC|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
+      - 🇯🇵 日本01|tg频道:@ripaojiedian
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇯🇵 日本3|tg频道:@ripaojiedian
+      - 🇯🇵 日本东京-tg频道:@ripaojiedian
       - 🇯🇵 日本快|tg频道:@ripaojiedian
+      - 🇭🇰 香港BGP|tg频道:@ripaojiedian
+      - 🇸🇬 狮城高速|tg频道:@ripaojiedian
+      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
+      - 🇰🇷 韩国1|tg频道:@ripaojiedian
+      - 🇯🇵 日本内网|tg频道:@ripaojiedian
+      - 🇨🇳 台湾HiNet|tg频道:@ripaojiedian
+      - 🇺🇸 美国-tg频道:@ripaojiedian
+      - 🇯🇵 日本|tg频道:@ripaojiedian
+      - 🇰🇷 韩国KR|tg频道:@ripaojiedian
+      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇺🇸 美国us|tg频道:@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本2|tg频道:@ripaojiedian
-      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
-      - 🇯🇵 日本内网|tg频道:@ripaojiedian
-      - 🇨🇳 台湾Hinet|tg频道:@ripaojiedian
-      - 🇯🇵 日本东京|tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@ripaojiedian
-      - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
-      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇸🇬 永久免费更新
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 🇭🇰 香港高速|tg频道:@ripaojiedian
+      - 🇨🇳 台湾2|tg频道:@ripaojiedian
+      - 🇭🇰 香港IPLC|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
+      - 🇯🇵 日本01|tg频道:@ripaojiedian
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇯🇵 日本3|tg频道:@ripaojiedian
+      - 🇯🇵 日本东京-tg频道:@ripaojiedian
       - 🇯🇵 日本快|tg频道:@ripaojiedian
+      - 🇭🇰 香港BGP|tg频道:@ripaojiedian
+      - 🇸🇬 狮城高速|tg频道:@ripaojiedian
+      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
+      - 🇰🇷 韩国1|tg频道:@ripaojiedian
+      - 🇯🇵 日本内网|tg频道:@ripaojiedian
+      - 🇨🇳 台湾HiNet|tg频道:@ripaojiedian
+      - 🇺🇸 美国-tg频道:@ripaojiedian
+      - 🇯🇵 日本|tg频道:@ripaojiedian
+      - 🇰🇷 韩国KR|tg频道:@ripaojiedian
+      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇺🇸 美国us|tg频道:@ripaojiedian
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 日本2|tg频道:@ripaojiedian
-      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
-      - 🇯🇵 日本内网|tg频道:@ripaojiedian
-      - 🇨🇳 台湾Hinet|tg频道:@ripaojiedian
-      - 🇯🇵 日本东京|tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@ripaojiedian
-      - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
-      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇸🇬 永久免费更新
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 🇭🇰 香港高速|tg频道:@ripaojiedian
+      - 🇨🇳 台湾2|tg频道:@ripaojiedian
+      - 🇭🇰 香港IPLC|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
+      - 🇯🇵 日本01|tg频道:@ripaojiedian
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇯🇵 日本3|tg频道:@ripaojiedian
+      - 🇯🇵 日本东京-tg频道:@ripaojiedian
       - 🇯🇵 日本快|tg频道:@ripaojiedian
+      - 🇭🇰 香港BGP|tg频道:@ripaojiedian
+      - 🇸🇬 狮城高速|tg频道:@ripaojiedian
+      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
+      - 🇰🇷 韩国1|tg频道:@ripaojiedian
+      - 🇯🇵 日本内网|tg频道:@ripaojiedian
+      - 🇨🇳 台湾HiNet|tg频道:@ripaojiedian
+      - 🇺🇸 美国-tg频道:@ripaojiedian
+      - 🇯🇵 日本|tg频道:@ripaojiedian
+      - 🇰🇷 韩国KR|tg频道:@ripaojiedian
+      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇺🇸 美国us|tg频道:@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本2|tg频道:@ripaojiedian
-      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
-      - 🇯🇵 日本内网|tg频道:@ripaojiedian
-      - 🇨🇳 台湾Hinet|tg频道:@ripaojiedian
-      - 🇯🇵 日本东京|tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@ripaojiedian
-      - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
-      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇸🇬 永久免费更新
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 🇭🇰 香港高速|tg频道:@ripaojiedian
+      - 🇨🇳 台湾2|tg频道:@ripaojiedian
+      - 🇭🇰 香港IPLC|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
+      - 🇯🇵 日本01|tg频道:@ripaojiedian
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇯🇵 日本3|tg频道:@ripaojiedian
+      - 🇯🇵 日本东京-tg频道:@ripaojiedian
       - 🇯🇵 日本快|tg频道:@ripaojiedian
+      - 🇭🇰 香港BGP|tg频道:@ripaojiedian
+      - 🇸🇬 狮城高速|tg频道:@ripaojiedian
+      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
+      - 🇰🇷 韩国1|tg频道:@ripaojiedian
+      - 🇯🇵 日本内网|tg频道:@ripaojiedian
+      - 🇨🇳 台湾HiNet|tg频道:@ripaojiedian
+      - 🇺🇸 美国-tg频道:@ripaojiedian
+      - 🇯🇵 日本|tg频道:@ripaojiedian
+      - 🇰🇷 韩国KR|tg频道:@ripaojiedian
+      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇺🇸 美国us|tg频道:@ripaojiedian
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本2|tg频道:@ripaojiedian
-      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
-      - 🇯🇵 日本内网|tg频道:@ripaojiedian
-      - 🇨🇳 台湾Hinet|tg频道:@ripaojiedian
-      - 🇯🇵 日本东京|tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@ripaojiedian
-      - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
-      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇸🇬 永久免费更新
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 🇭🇰 香港高速|tg频道:@ripaojiedian
+      - 🇨🇳 台湾2|tg频道:@ripaojiedian
+      - 🇭🇰 香港IPLC|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
+      - 🇯🇵 日本01|tg频道:@ripaojiedian
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇯🇵 日本3|tg频道:@ripaojiedian
+      - 🇯🇵 日本东京-tg频道:@ripaojiedian
       - 🇯🇵 日本快|tg频道:@ripaojiedian
+      - 🇭🇰 香港BGP|tg频道:@ripaojiedian
+      - 🇸🇬 狮城高速|tg频道:@ripaojiedian
+      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
+      - 🇰🇷 韩国1|tg频道:@ripaojiedian
+      - 🇯🇵 日本内网|tg频道:@ripaojiedian
+      - 🇨🇳 台湾HiNet|tg频道:@ripaojiedian
+      - 🇺🇸 美国-tg频道:@ripaojiedian
+      - 🇯🇵 日本|tg频道:@ripaojiedian
+      - 🇰🇷 韩国KR|tg频道:@ripaojiedian
+      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇺🇸 美国us|tg频道:@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,16 +258,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本2|tg频道:@ripaojiedian
-      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
-      - 🇯🇵 日本内网|tg频道:@ripaojiedian
-      - 🇨🇳 台湾Hinet|tg频道:@ripaojiedian
-      - 🇯🇵 日本东京|tg频道:@ripaojiedian
-      - 🇰🇷 韩国-tg频道:@ripaojiedian
-      - 🇺🇸 美国-tg频道:@ripaojiedian
-      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
-      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇸🇬 永久免费更新
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 🇭🇰 香港高速|tg频道:@ripaojiedian
+      - 🇨🇳 台湾2|tg频道:@ripaojiedian
+      - 🇭🇰 香港IPLC|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
+      - 🇯🇵 日本01|tg频道:@ripaojiedian
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇯🇵 日本3|tg频道:@ripaojiedian
+      - 🇯🇵 日本东京-tg频道:@ripaojiedian
       - 🇯🇵 日本快|tg频道:@ripaojiedian
+      - 🇭🇰 香港BGP|tg频道:@ripaojiedian
+      - 🇸🇬 狮城高速|tg频道:@ripaojiedian
+      - 🇭🇰 香港HKT|tg频道:@ripaojiedian
+      - 🇰🇷 韩国1|tg频道:@ripaojiedian
+      - 🇯🇵 日本内网|tg频道:@ripaojiedian
+      - 🇨🇳 台湾HiNet|tg频道:@ripaojiedian
+      - 🇺🇸 美国-tg频道:@ripaojiedian
+      - 🇯🇵 日本|tg频道:@ripaojiedian
+      - 🇰🇷 韩国KR|tg频道:@ripaojiedian
+      - 🇯🇵 东京|优选|tg频道:@ripaojiedian
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇯🇵 东京2|tg频道:@ripaojiedian
+      - 🇺🇸 美国us|tg频道:@ripaojiedian
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
