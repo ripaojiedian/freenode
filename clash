@@ -26,7 +26,7 @@ proxies:
   - {name: 🇫🇷 法国|tg频道:@ripaojiedian, server: 104.29.64.24, port: 80, type: vmess, uuid: 4e21574f-1796-4f0a-86c0-4430fe99d3a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /p9Dq67Nx/, headers: {Host: fr1.cachexy.ga}}}
   - {name: 🇳🇱 荷兰1|tg频道:@ripaojiedian, server: 218.76.244.216, port: 30281, type: vmess, uuid: 3f421e27-5bf8-40c9-86cb-7b8c41dddea2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /lXvA0Vse/}}
   - {name: 🇺🇸 美国b|tg频道:@ripaojiedian, server: 46.182.107.151, port: 443, type: vmess, uuid: f5250c4e-f855-4eff-b73c-a02226d42fe7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/321113221131, headers: {Host: www.60445357.xyz}}}
-  - {name: 🇸🇬 新加坡+tg频道:@ripaojiedian, server: aws2.yydsdy.top, port: 20000, type: ss, cipher: chacha20-ietf-poly1305, password: Rah5vQ2A7aaH2bMb0eAwtyAfwgunvZOWiB2n25WhGmp1}
+  - {name: 🇸🇬 新加坡+tg频道:@ripaojiedian, server: aws2.yydsdy.top, port: 20000, type: ss, cipher: chacha20-ietf-poly1305, password: Rah5vQ2A7aaH2bMb0eAwtyAfwgunvZOWiB2n25WhGmp1, plugin: obfs, plugin-opts: {mode: http, host: aws2.yydsdy.top}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
