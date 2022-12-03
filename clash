@@ -38,7 +38,7 @@ proxies:
   - {name: 🇺🇸 美国2|tg频道:@ripaojiedian, server: 45.64.22.22, port: 443, type: vmess, uuid: 4bd74c27-d23a-4083-be2a-5c2c139dadb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /P3gjm, headers: {Host: g.pgypgykmoljklj.xyz}}}
   - {name: 🇸🇬 节点每天更新, server: king6.workingoogle.ga, port: 8880, type: vmess, uuid: 050624ec-ba6a-49c3-e8d9-c46e5c167be0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fh454hg4fthfh, headers: {Host: king6.workingoogle.ga}}}
   - {name: 🇺🇸 美国|tg频道:@ripaojiedian, server: pages-riven.pages.dev, port: 443, type: vmess, uuid: 4bd74c27-d23a-4083-be2a-5c2c139dadb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /P3gjm, headers: {Host: g.pgypgykmoljklj.xyz}}}
-  - {name: 🇸🇬 狮城A|tg频道:@ripaojiedian, server: aws2.yydsdy.top, port: 20000, type: ss, cipher: aes-128-gcm, password: Rah5vQ2A7aaH2bMb0eAwtyAfwgunvZOWiB2n25WhGmp1}
+  - {name: 🇸🇬 狮城A|tg频道:@ripaojiedian, server: aws2.yydsdy.top, port: 20000, type: ss, cipher: aes-128-gcm, password: Rah5vQ2A7aaH2bMb0eAwtyAfwgunvZOWiB2n25WhGmp1, plugin: obfs, plugin-opts: {mode: http, host: aws2.yydsdy.top}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
