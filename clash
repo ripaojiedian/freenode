@@ -15,7 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 香港V3|tg频道:@ripaojiedian, server: w96y.cdn.node.a.tddns-ounk.com, port: 20405, type: ssr, cipher: chacha20, password: JXpZpq, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 259527:l9OUdU, obfs-param: c3b40259527.microsoft.com}
+  - {name: 🇭🇰 香港V3|tg频道:@ripaojiedian, server: w96y.cdn.node.a.tddns-ounk.com, port: 20405, type: ssr, cipher: aes-256-cfb, password: JXpZpq, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 259527:l9OUdU, obfs-param: c3b40259527.microsoft.com}
   - {name: 🇭🇰 香港技术|tg频道:@ripaojiedian, server: 183.60.211.15, port: 13001, type: trojan, password: 7df1542c-d457-3948-a3bb-67014c40e798, sni: 183.60.211.15, skip-cert-verify: false}
   - {name: 🇹🇼 台湾, server: 14.29.124.168, port: 24000, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 🇭🇰 香港优质|tg频道:@ripaojiedian, server: n1671291818.lyqrdde.cn, port: 443, type: vmess, uuid: c459c20f-f864-4dc6-a408-2bf8450a9c03, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ofuBTaz1, headers: {Host: n1671291818.lyqrdde.cn}}}
