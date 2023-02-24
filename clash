@@ -15,10 +15,10 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 香港clash|tg频道:@ripaojiedian, server: 43.159.196.4, port: 46994, type: vmess, uuid: 00e35854-8706-470e-af31-e30e557e7e5e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, servername: hk3.linkeden.co, network: ws, ws-opts: {path: /hk3/getData, headers: {Host: hk3.linkeden.co}}}
+  - {name: 🇭🇰 香港clash|tg频道:@ripaojiedian, server: 43.159.196.4, port: 46994, type: vmess, uuid: 00e35854-8706-470e-af31-e30e557e7e5e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: hk3.linkeden.co, network: ws, ws-opts: {path: /hk3/getData, headers: {Host: hk3.linkeden.co}}}
   - {name: 🇯🇵 日本高速|tg频道:@ripaojiedian, server: jp6.lianpi.xyz, port: 23234, type: vmess, uuid: 93d94f53-e7d1-41f5-bd65-b2fcd99928e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇹🇼 台湾|tg频道:@ripaojiedian, server: gkifo-8-tr-0.tw-tpe-hinet-0-0.o-two.xyz, port: 889, type: trojan, password: HPjGTUYvoKwyysUVrdWqXEljNDZoURSR, sni: o-two.bond, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国clash|tg频道:@ripaojiedian, server: 45.93.28.189, port: 37544, type: vmess, uuid: 52bd11e3-fe5c-4d2c-b962-e54363efc421, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, servername: kor4.linkeden.co, network: ws, ws-opts: {path: /kor4/getData, headers: {Host: kor4.linkeden.co}}}
+  - {name: 🇰🇷 韩国clash|tg频道:@ripaojiedian, server: 45.93.28.189, port: 37544, type: vmess, uuid: 52bd11e3-fe5c-4d2c-b962-e54363efc421, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: kor4.linkeden.co, network: ws, ws-opts: {path: /kor4/getData, headers: {Host: kor4.linkeden.co}}}
   - {name: 🇸🇬 新加坡|tg频道:@ripaojiedian, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: dd83e305-d487-4242-87be-67e3f52116fd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sgm2.targoocloud.live, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sgm2.targoocloud.live}}}
   - {name: 🇯🇵 日本|tg频道:@ripaojiedian, server: 132.226.5.189, port: 26369, type: vmess, uuid: f5934f6a-6a07-4c7c-bb0f-3af328ea6897, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇯🇵 日本A|tg频道:@ripaojiedian, server: 138.2.45.89, port: 44301, type: trojan, password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702, sni: osav101.jd0001.top, skip-cert-verify: false}
@@ -36,7 +36,7 @@ proxies:
   - {name: 🇰🇷 首尔|tg频道:@ripaojiedian, server: a3.wzr905.ml, port: 80, type: vmess, uuid: f63dff77-c865-4f4d-bfa0-bef0597f6da4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: a3.wzr905.ml, network: ws, ws-opts: {path: 7932, headers: {Host: a3.wzr905.ml}}}
   - {name: 🇺🇸 美国特殊|tg频道:@ripaojiedian, server: 34.210.24.64, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇺🇸 美国优选|tg频道:@ripaojiedian, server: c.mg.us.cat77.cloud, port: 8646, type: trojan, password: cd27884b-c5af-34ec-b75f-8248077818fe, sni: c.mg.us.cat77.cloud, skip-cert-verify: false}
-  - {name: 🇬🇧 英国|tg频道:@ripaojiedian, server: 87.254.31.23, port: 41647, type: vmess, uuid: aae02fcc-179b-4edc-aa69-6878ff29d01c, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, servername: uk.linkeden.co, network: ws, ws-opts: {path: /uk/getData, headers: {Host: uk.linkeden.co}}}
+  - {name: 🇬🇧 英国|tg频道:@ripaojiedian, server: 87.254.31.23, port: 41647, type: vmess, uuid: aae02fcc-179b-4edc-aa69-6878ff29d01c, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: uk.linkeden.co, network: ws, ws-opts: {path: /uk/getData, headers: {Host: uk.linkeden.co}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
