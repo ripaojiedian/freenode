@@ -5,6 +5,7 @@
 频道:@ripaojiedian
 
 ## 订阅地址，国内优先使用镜像订阅
+(推荐使用clash，兼容性更强)
 
 clash订阅：https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
 
