@@ -26,8 +26,8 @@ proxies:
   - {name: 🇯🇵 日本特殊|安卓使用clash, server: 13.229.51.197, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇸🇬 新加坡2|tg频道:@ripaojiedian, server: sg4.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org, port: 8443, type: trojan, password: 6fab5b8e-2b5a-4ecd-82cb-fa3d1afb9ca7, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: false}
   - {name: 🇯🇵 日本东京|tg频道:@ripaojiedian, server: 158.101.134.125, port: 39176, type: vmess, uuid: e1090140-f03a-49ad-b899-e036f0ff0235, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HK|tg频道:@ripaojiedian, server: 120.241.255.196, port: 41687, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, sni: 120.241.255.196, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡|tg:@ripaojiedian, server: hncu.donghui.tech, port: 49761, type: trojan, password: 76fbd7f9-3707-4e5c-b43a-904367318d6d, sni: hncu.donghui.tech, skip-cert-verify: false}
+  - {name: 🇭🇰 香港HK|tg频道:@ripaojiedian, server: 120.241.255.196, port: 41687, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, sni: 120.241.255.196, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡|tg:@ripaojiedian, server: hncu.donghui.tech, port: 49761, type: trojan, password: 76fbd7f9-3707-4e5c-b43a-904367318d6d, sni: hncu.donghui.tech, skip-cert-verify: true}
   - {name: 🇯🇵 日本1|tg频道:@ripaojiedian, server: ssr.302888.xyz, port: 30112, type: ss, cipher: aes-128-gcm, password: !<str> 1}
   - {name: 🇯🇵 日本|tg:@ripaojiedian, server: october.mytargoocloud.live, port: 80, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: jpm1.nascloudreve.live}}}
   - {name: 🇹🇼 台湾2|tg:@ripaojiedian, server: sunmoon01.linkzoones.xyz, port: 30301, type: vmess, uuid: e23e4740-23e2-3826-abbe-f5d7c2ff486f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw01.tomoony.xyz}
