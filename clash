@@ -26,19 +26,19 @@ proxies:
   - {name: 🇯🇵 日本测试|tg:@ripaojiedian, server: 3.1.6.229, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇸🇬 狮城测试|tg:@ripaojiedian, server: 13.229.122.56, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇯🇵 日本东京|tg:@ripaojiedian, server: 15.152.86.184, port: 80, type: vmess, uuid: 1d4e85c7-f510-4a84-bb46-ebbaa0c53907, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: asp.cntv.myalicdn.com}}}
-  - {name: 🇸🇬 狮城|tg频道:@ripaojiedian, server: sg5.lianpi.xyz, port: 54126, type: vmess, uuid: a33fcd7c-daa6-44f3-8de0-be74e17f0d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HK|tg频道:@ripaojiedian, server: 120.241.255.196, port: 41687, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, sni: 120.241.255.196, skip-cert-verify: false}
+  - {name: 🇸🇬 狮城|tg频道:@ripaojiedian, server: sg5.lianpi.xyz, port: 54126, type: vmess, uuid: a33fcd7c-daa6-44f3-8de0-be74e17f0d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇭🇰 香港HK|tg频道:@ripaojiedian, server: 120.241.255.196, port: 41687, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, sni: 120.241.255.196, skip-cert-verify: true}
   - {name: 测试节点安卓使用clash, server: 13.125.198.225, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇯🇵 日本直连|tg频道:@ripaojiedian, server: moslb-x-aws-jptk.softether.net, port: 25565, type: ss, cipher: aes-256-gcm, password: fuck_gfw}
   - {name: 特殊时期关注频道, server: 3.36.85.97, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 日本节点|tg频道:@ripaojiedian, server: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, port: 12343, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: uwayvbjlshiuxaw.vzwzasc.cn, skip-cert-verify: false}
+  - {name: 🇯🇵 日本节点|tg频道:@ripaojiedian, server: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, port: 12343, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: uwayvbjlshiuxaw.vzwzasc.cn, skip-cert-verify: true}
   - {name: 🇯🇵 日本小火箭节点|tg频道:@ripaojiedian, server: wz.safetelescope.cc, port: 10020, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 174791:SmWXwyhRuM, obfs-param: ajax.microsoft.com}
   - {name: 🇯🇵 日本垃圾|tg频道:@ripaojiedian, server: jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org, port: 8443, type: trojan, password: 6fab5b8e-2b5a-4ecd-82cb-fa3d1afb9ca7, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: true}
   - {name: 🇰🇷 韩国测试|tg:@ripaojiedian, server: 3.0.90.196, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 Japan2|tg频道:@ripaojiedian, server: jp7.lianpi.xyz, port: 53638, type: trojan, password: 5d651d8c-d5b3-418b-a3ea-55171af5b726, sni: jp7.lianpi.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 Japan2|tg频道:@ripaojiedian, server: jp7.lianpi.xyz, port: 53638, type: trojan, password: 5d651d8c-d5b3-418b-a3ea-55171af5b726, sni: jp7.lianpi.xyz, skip-cert-verify: true}
   - {name: 🇯🇵 日本JP|tg频道:@ripaojiedian, server: 45.80.111.53, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 200.aquabazi.site, network: ws, ws-opts: {path: /suzhihan.eu.org/roewesu, headers: {Host: 200.aquabazi.site}}}
-  - {name: 🇹🇼 台湾|tg频道:@ripaojiedian, server: polotw1.applebench.tech, port: 56568, type: vmess, uuid: a33fcd7c-daa6-44f3-8de0-be74e17f0d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇹🇼 台湾优化|tg频道:@ripaojiedian, server: kcdtw1-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: e95194b4-bc7e-497f-876a-686e127e0b65, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇹🇼 台湾|tg频道:@ripaojiedian, server: polotw1.applebench.tech, port: 56568, type: vmess, uuid: a33fcd7c-daa6-44f3-8de0-be74e17f0d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇹🇼 台湾优化|tg频道:@ripaojiedian, server: kcdtw1-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: e95194b4-bc7e-497f-876a-686e127e0b65, sni: data.amazonwebservicess.com, skip-cert-verify: true}
   - {name: 🇰🇷 韩国kr|tg频道:@ripaojiedian, server: sa.unlimitedtraffic.top, port: 25881, type: ss, cipher: chacha20-ietf-poly1305, password: 19323732-d371-43f0-a6c1-1833dc68a137}
 proxy-groups:
   - name: 🚀 节点选择
