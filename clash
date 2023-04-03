@@ -15,7 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 香港火箭|tg频道:@ripaojiedian, server: fn600mlines021.svcline.com, port: 995, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 507364fb791e, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: "", host: fn600mlines021.svcline.com, path: /kpnzyxsj, tls: true, mux: false, skip-cert-verify: false}}
+  - {name: 🇭🇰 香港火箭|tg频道:@ripaojiedian, server: fn600mlines021.svcline.com, port: 995, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 507364fb791e, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.svcline.com, path: /kpnzyxsj, tls: true, mux: true, skip-cert-verify: false}}
   - {name: 🇭🇰 香港快|tg频道:@ripaojiedian, server: hk80-2.8b750e3e20aa.sanfen001.pics, port: 80, client-fingerprint: chrome, type: vmess, uuid: 6ed10240-77ee-464f-aec4-5fe257b9b5af, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}}
   - {name: 🇭🇰 香港高速|tg频道:@ripaojiedian, server: hncu.1.ow1.top, port: 24323, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 65458be2-efc3-4f62-b544-97991706be39, tfo: false}
   - {name: 🇯🇵 日本|tg频道:@ripaojiedian, server: jp.sl.pelosi.ml, port: 40212, client-fingerprint: chrome, type: vmess, uuid: f062ee83-e12f-4f09-b77f-a67bcd856fc1, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
