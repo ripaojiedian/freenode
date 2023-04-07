@@ -15,6 +15,7 @@ clash订阅：https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
 ### 如果无法订阅，请使用下面的国内镜像订阅，节点是一样的。
 
 clash订阅：https://raw.fastgit.org/ripaojiedian/freenode/main/clash
+         
          两个镜像哪个能用用哪个
          https://raw.fgit.ml/ripaojiedian/freenode/main/clash
 
