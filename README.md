@@ -17,7 +17,7 @@ clash订阅：https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
 clash订阅：https://raw.fastgit.org/ripaojiedian/freenode/main/clash
          
          两个镜像哪个能用用哪个
-         https://raw.fgit.ml/ripaojiedian/freenode/main/clash
+https://raw.fgit.ml/ripaojiedian/freenode/main/clash
 
 通用base64/v2ray订阅: https://raw.fastgit.org/ripaojiedian/freenode/main/sub
        
