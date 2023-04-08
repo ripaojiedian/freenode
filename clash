@@ -15,7 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 香港火箭|tg频道:@ripaojiedian, server: fn600mlines021.svcline.com, port: 995, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 507364fb791e, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.svcline.com, path: /kpnzyxsj, tls: true, true: false, skip-cert-verify: false}}
+  - {name: 🇭🇰 香港火箭|tg频道:@ripaojiedian, server: fn600mlines021.svcline.com, port: 995, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 507364fb791e, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.svcline.com, path: /kpnzyxsj, tls: true, mux: true, skip-cert-verify: false}}
   - {name: 🇭🇰 香港|tg频道:@ripaojiedian, server: 120.240.48.202, port: 55230, client-fingerprint: chrome, type: trojan, password: ncz2TDM8btr6ext@kaj, tfo: false, sni: ov01.essmart.co, skip-cert-verify: true}
   - {name: 🇭🇰 香港S|tg频道:@ripaojiedian, server: 43.154.250.159, port: 28864, client-fingerprint: chrome, type: vmess, uuid: 9dc18843-47c7-4ea2-a8b9-0625a9595efa, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hk14/getData}}
   - {name: 🇯🇵 日本|tg频道:@ripaojiedian, server: aws.untilmu.com, port: 443, client-fingerprint: chrome, type: trojan, password: 2f180bce-4190-4bc3-88ce-5cffb75cf0ac, tfo: false, sni: aws.untilmu.com, skip-cert-verify: true}
