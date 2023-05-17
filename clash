@@ -15,7 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇹🇼 台湾独家|@ripaojiedian, server: fn300mtw035.feichuanjs.net, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 2db240b4348f, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn300mtw035.feichuanjs.net, path: /kqbyhjbstyz, tls: true, mux: false, skip-cert-verify: false}}
+  - {name: 🇹🇼 台湾独家|@ripaojiedian, server: 103.177.33.163, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a484da88680c, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: "", host: fn600mlines006.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
   - {name: 🇭🇰 香港高速|@ripaojiedian, server: hk4.af49c4e4c2ef.sanfen004.me, port: 443, client-fingerprint: chrome, type: vmess, uuid: 004d5ee6-381f-4e2f-960f-1eea33c7cff4, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: hk1.sanfen004.me, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}}
   - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 13.113.7.165, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
   - {name: 🇭🇰 香港M|tg频道:@ripaojiedian, server: hk80-2.6d83777c049a.sanfen004.me, port: 80, client-fingerprint: chrome, type: vmess, uuid: 004d5ee6-381f-4e2f-960f-1eea33c7cff4, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}}
