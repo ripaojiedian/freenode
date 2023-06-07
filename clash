@@ -16,7 +16,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 纽约测试|@ripaojiedian, server: 216.52.183.243, port: 80, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, tfo: false, plugin: obfs, plugin-opts: {mode: http, host: ""}}
-  - {name: 🇹🇼 台湾独家|@ripaojiedian, server: 103.177.33.180, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: "", host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 🇹🇼 台湾独家|@ripaojiedian, server: 103.177.33.180, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: false}}
   - {name: 🇯🇵 日本2|@ripaojiedian, server: aws-jp.aikun.online, port: 443, client-fingerprint: chrome, type: trojan, password: bd6885ae-e886-4735-badf-e8ba34f40953, tfo: false, sni: cdn-65135431546231.78321.xyz, skip-cert-verify: false}
   - {name: 🇹🇼 台湾|tg频道:@ripaojiedian, server: cdn.twnct.6641634715834932.me, port: 7045, client-fingerprint: chrome, type: trojan, password: bd6885ae-e886-4735-badf-e8ba34f40953, tfo: false, sni: cdn.twnct.6641634715834932.me, skip-cert-verify: false}
   - {name: 🇹🇼 台湾2|@ripaojiedian, server: tw7.microsoft-orgwly.vip, port: 10024, client-fingerprint: chrome, type: trojan, password: fcf74125-99de-4df3-af94-552a0b1ee021, tfo: false, sni: tls.microsoft-orgwly.vip, skip-cert-verify: false}
