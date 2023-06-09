@@ -16,7 +16,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 纽约测试|@ripaojiedian, server: 216.52.183.243, port: 80, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, tfo: false, plugin: obfs, plugin-opts: {mode: http, host: ""}}
-  - {name: 🇹🇼 台湾独家|@ripaojiedian, server: 103.177.33.180, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: "", host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 🇹🇼 台湾独家|@ripaojiedian, server: 103.177.33.180, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: false}}
   - {name: 🇯🇵 日本R|@ripaojiedian, server: jp-am48-6.eqnode.net, port: 8081, client-fingerprint: chrome, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, tfo: false, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
   - {name: 🇹🇼 台湾|tg频道:@ripaojiedian, server: hinet2.downloadvip.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: 6d3e4bd5-355f-444c-b3e2-b7baa8e76023, tfo: false, sni: download.xn--mes358a9urctx.com, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡|tg频道:@ripaojiedian, server: 13.214.56.137, port: 9234, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: pABcOyEwLOQF2WDV, tfo: false}
