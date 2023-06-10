@@ -16,7 +16,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 纽约测试|@ripaojiedian, server: 216.52.183.243, port: 80, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, tfo: false, plugin: obfs, plugin-opts: {mode: http, host: ""}}
-  - {name: 🇹🇼 台湾独家|@ripaojiedian, server: 103.177.33.180, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: "", host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 🇹🇼 台湾独家|@ripaojiedian, server: 103.177.33.180, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: false}}
   - {name: 🇭🇰 香港2|@ripaojiedian, server: gcphk03.zhoushuren.top, port: 443, client-fingerprint: chrome, type: trojan, password: 8d4f20f0-295d-42ef-aa3a-e6d6a2a310c6, tfo: false, sni: gcphk03.zhoushuren.top, skip-cert-verify: false}
   - {name: 🇸🇬 狮城2|@ripaojiedian, server: laxjp008.foofly.top, port: 16307, client-fingerprint: chrome, type: trojan, password: 37DlPwtmbd, tfo: false, sni: laxjp008.foofly.top, skip-cert-verify: false}
   - {name: 🇭🇰 香港R|@ripaojiedian, server: cmres.standpro.co, port: 563, client-fingerprint: chrome, type: ssr, cipher: chacha20-ietf, password: mblank1port, tfo: false, protocol: auth_aes128_md5, obfs: plain, protocol-param: 48465:LLLiuiuiu787878, obfs-param: ""}
