@@ -16,7 +16,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 纽约测试|@ripaojiedian, server: 216.52.183.245, port: 80, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, tfo: false, plugin: obfs, plugin-opts: {mode: http, host: ""}}
-  - {name: 🇹🇼 台湾独家|@ripaojiedian, server: 103.177.33.180, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: "", host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 🇹🇼 台湾独家|@ripaojiedian, server: 103.177.33.180, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: true, mux: true, skip-cert-verify: false}}
   - {name: 🇭🇰 香港小火箭|@ripaojiedian, server: iepl-hn.cctelescope.xyz, port: 20001, client-fingerprint: chrome, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 124006:JD9M7jawg8, obfs-param: ajax.microsoft.com}
   - {name: 🇯🇵 日本|tg频道:@ripaojiedian, server: jp-direct.node002.xyz, port: 554, client-fingerprint: chrome, type: vmess, uuid: bcec639e-a656-3703-8d13-47a6dca409e0, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡|@ripaojiedian, server: weo-sg-2.laowufly.cf, port: 23333, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/It'sExpensive!!!, tfo: false}
