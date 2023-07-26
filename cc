@@ -1,0 +1,1 @@
+https://suc.flycnb.tk/sub?target=clash&url=https%3A%2F%2Fgitcode.net%2Fqq_38049563%2Fqingyu%2F-%2Fraw%2Fmaster%2F142536&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
