@@ -17,7 +17,7 @@ dns:
 proxies:
   - {name: 纽约测试|@ripaojiedian, server: 216.52.183.244, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
   - {name: 🇯🇵 日本KT2|@ripaojiedian, server: 183.232.170.32, port: 20014, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
-  - {name: 🇯🇵 日本KT|@ripaojiedian, server: 183.232.170.32, port: 30005, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", tfo: false}
+  - {name: 🇯🇵 日本KT|@ripaojiedian, server: 183.232.170.32, port: 30005, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", tfo: false, plugin: obfs, plugin-opts: {mode: http, host: ""}}
   - {name: 🇭🇰 香港快|tg频道:@ripaojiedian, server: mf66fx.micloud.buzz, port: 42266, client-fingerprint: chrome, type: vmess, uuid: 83db123a-4294-49a0-b164-8addbf348b66, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mf66fx.micloud.buzz}}}
   - {name: 🇭🇰 香港|@ripaojiedian, server: 120.233.43.75, port: 49673, client-fingerprint: chrome, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇭🇰 HK|@ripaojiedian, server: a2jphkzxwmzjylmt.wudaki972.me, port: 9541, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: eFMBbL, tfo: false}
