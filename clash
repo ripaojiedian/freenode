@@ -15,6 +15,9 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
+  - {name: 🇭🇰 香港KT|@ripaojiedian, server: 47.243.48.200, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
+  - {name: 🇯🇵 日本KT|@ripaojiedian, server: 183.232.170.32, port: 20013, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
+  - {name: 🇯🇵 日本KT2|@ripaojiedian, server: 183.232.170.32, port: 30011, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
   - {name: 🇸🇬 新加坡T|@ripaojiedian, server: 5.44.249.42, port: 3306, client-fingerprint: chrome, type: trojan, password: 36fe28a331638747, tfo: false, sni: n2.gladns.com, skip-cert-verify: false, network: ws, ws-opts: {path: "/gateway/connect", headers: {Host: n2.gladns.com}}, udp: true}
   - {name: 🇭🇰 香港T|@ripaojiedian, server: 45.11.104.94, port: 3306, client-fingerprint: chrome, type: trojan, password: d02058f4f819dced, tfo: false, sni: n2.gladns.com, skip-cert-verify: false, network: ws, ws-opts: {path: "/gateway/connect", headers: {Host: n2.gladns.com}}, udp: true}
   - {name: 🇭🇰 香港小火箭|@ripaojiedian, server: iepl-zh.safetelescope.cc, port: 11808, client-fingerprint: chrome, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 291971:xPmH40B1go, obfs-param: ajax.microsoft.com}
@@ -41,6 +44,9 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
+      - 🇯🇵 日本KT2|@ripaojiedian
       - 🇸🇬 新加坡T|@ripaojiedian
       - 🇭🇰 香港T|@ripaojiedian
       - 🇭🇰 香港小火箭|@ripaojiedian
@@ -67,6 +73,9 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
+      - 🇯🇵 日本KT2|@ripaojiedian
       - 🇸🇬 新加坡T|@ripaojiedian
       - 🇭🇰 香港T|@ripaojiedian
       - 🇭🇰 香港小火箭|@ripaojiedian
@@ -93,6 +102,9 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
+      - 🇯🇵 日本KT2|@ripaojiedian
       - 🇸🇬 新加坡T|@ripaojiedian
       - 🇭🇰 香港T|@ripaojiedian
       - 🇭🇰 香港小火箭|@ripaojiedian
@@ -118,6 +130,9 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
+      - 🇯🇵 日本KT2|@ripaojiedian
       - 🇸🇬 新加坡T|@ripaojiedian
       - 🇭🇰 香港T|@ripaojiedian
       - 🇭🇰 香港小火箭|@ripaojiedian
@@ -143,6 +158,9 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
+      - 🇯🇵 日本KT2|@ripaojiedian
       - 🇸🇬 新加坡T|@ripaojiedian
       - 🇭🇰 香港T|@ripaojiedian
       - 🇭🇰 香港小火箭|@ripaojiedian
@@ -168,6 +186,9 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
+      - 🇯🇵 日本KT2|@ripaojiedian
       - 🇸🇬 新加坡T|@ripaojiedian
       - 🇭🇰 香港T|@ripaojiedian
       - 🇭🇰 香港小火箭|@ripaojiedian
@@ -194,6 +215,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
+      - 🇯🇵 日本KT2|@ripaojiedian
       - 🇸🇬 新加坡T|@ripaojiedian
       - 🇭🇰 香港T|@ripaojiedian
       - 🇭🇰 香港小火箭|@ripaojiedian
@@ -236,6 +260,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
+      - 🇯🇵 日本KT2|@ripaojiedian
       - 🇸🇬 新加坡T|@ripaojiedian
       - 🇭🇰 香港T|@ripaojiedian
       - 🇭🇰 香港小火箭|@ripaojiedian
