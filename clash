@@ -15,8 +15,8 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇸🇬 新加坡T|@ripaojiedian, server: 5.44.249.42, port: 3306, client-fingerprint: chrome, type: trojan, password: 36fe28a331638747, tfo: false, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港T|@ripaojiedian, server: 45.11.104.94, port: 3306, client-fingerprint: chrome, type: trojan, password: d02058f4f819dced, tfo: false, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡T|@ripaojiedian, server: 5.44.249.42, port: 3306, client-fingerprint: chrome, type: trojan, password: 36fe28a331638747, tfo: false, sni: n2.gladns.com, skip-cert-verify: false, network: ws, ws-opts: {path: "/gateway/connect", headers: {Host: n2.gladns.com}}, udp: true}
+  - {name: 🇭🇰 香港T|@ripaojiedian, server: 45.11.104.94, port: 3306, client-fingerprint: chrome, type: trojan, password: d02058f4f819dced, tfo: false, sni: n2.gladns.com, skip-cert-verify: false, network: ws, ws-opts: {path: "/gateway/connect", headers: {Host: n2.gladns.com}}, udp: true}
   - {name: 🇭🇰 香港小火箭|@ripaojiedian, server: iepl-zh.safetelescope.cc, port: 11808, client-fingerprint: chrome, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 291971:xPmH40B1go, obfs-param: ajax.microsoft.com}
   - {name: 🇯🇵 日本|tg频道:@ripaojiedian, server: mf11fx.micloud.buzz, port: 46011, client-fingerprint: chrome, type: vmess, uuid: e56c43fd-1ceb-4565-ba7d-da0150d8c18a, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mf11fx.micloud.buzz}}}
   - {name: 🇭🇰 香港B|@ripaojiedian, server: 120.226.50.82, port: 53300, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
