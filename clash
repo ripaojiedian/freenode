@@ -15,7 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 纽约测试|@ripaojiedian, server: 216.52.183.245, port: 80, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, tfo: false, plugin: obfs, plugin-opts: {mode: "", host: ""}}
+  - {name: 纽约测试|@ripaojiedian, server: 216.52.183.245, port: 80, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, tfo: false, plugin: obfs, plugin-opts: {mode: "http", host: ""}}
   - {name: 🇭🇰 香港KT|@ripaojiedian, server: 47.243.48.200, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
   - {name: 🇯🇵 日本KT|@ripaojiedian, server: 183.232.170.32, port: 20013, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
   - {name: 🇯🇵 日本KT2|@ripaojiedian, server: 183.232.170.32, port: 30011, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
