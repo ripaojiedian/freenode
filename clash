@@ -34,7 +34,7 @@ proxies:
   - {name: 🇭🇰 香港2|@ripaojiedian, server: 183.238.202.173, port: 51904, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇹🇼 台湾A|@ripaojiedian, server: tw-hinet-001.128081.xyz, port: 12572, client-fingerprint: chrome, type: vmess, uuid: 448dc61a-e5ad-45b6-a5bf-6583f4fc5c4a, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 13.212.11.28, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-  - {name: 🇯🇵 日本快|@ripaojiedian, server: 3.113.215.86, port: 3306, client-fingerprint: chrome, type: trojan, password: faf42aa0a9ad4c1e, tfo: false, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇯🇵 日本快|@ripaojiedian, server: 3.113.215.86, port: 3306, client-fingerprint: chrome, type: trojan, password: faf42aa0a9ad4c1e, tfo: false, sni: n2.gladns.com, skip-cert-verify: false, network: ws, ws-opts: {path: "/gateway/connect", headers: {Host: n2.gladns.com}}, udp: true}
   - {name: 🇺🇸 美国M|@ripaojiedian, server: 23.227.39.18, port: 443, client-fingerprint: chrome, type: trojan, password: 89ce124f-42d1-4c90-b9d2-bde2861ae615, tfo: false, sni: pus1.pqjc.buzz, skip-cert-verify: false}
   - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 43.202.60.174, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
   - {name: 🇰🇷 韩国特殊2|@ripaojiedian, server: 52.78.181.72, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
