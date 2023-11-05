@@ -10,14 +10,14 @@ github的订阅永久无需更换，但部分地区需要翻墙才能更新或�
 ### github原版，部分地区可能需要翻墙更新，但永远有效
 (推荐使用clash，兼容性更强)
 
-clash订阅：https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
+clash订阅：https://raw.fgit.cf/ripaojiedian/freenode/main/clash
 
-通用base64/v2ray订阅：https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub
+通用base64/v2ray订阅：https://raw.fgit.cf/ripaojiedian/freenode/main/sub
 
 
 ### 如果上面的无法订阅，请使用下面的国内镜像订阅，节点是一样的。（但不稳定，镜像随时挂）
 (2023年7月3日开始fastgit镜像一直有问题，更换镜像源)
-（2023年11月5日，两个镜像源，一个挂，一个被墙，等待更新镜像😭）
+（2023年11月5日，更换掉失效镜像）
 
 clash订阅：https://raw.gitmirror.com/ripaojiedian/freenode/main/clash
          
