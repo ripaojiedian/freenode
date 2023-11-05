@@ -7,7 +7,7 @@
 ## 永久订阅地址，国内优先使用镜像订阅（但镜像不稳定）
 github的订阅永久无需更换，但部分地区需要翻墙才能更新或添加，国内镜像无需翻墙更新或添加，但镜像源不稳定，几个月一换
 
-###github原版，部分地区可能需要翻墙更新，但永远有效
+### github原版，部分地区可能需要翻墙更新，但永远有效
 (推荐使用clash，兼容性更强)
 
 clash订阅：https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
