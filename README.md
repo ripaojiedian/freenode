@@ -10,7 +10,7 @@ github的订阅永久无需更换，但部分地区需要翻墙才能更新或�
 ### github原版，部分地区可能需要翻墙更新，但永远有效
 (推荐使用clash，兼容性更强)
 
-clash订阅：https://raw.githubusercontent.com/ripaojiedian/freenode/main/clsh
+clash订阅：https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
 
 通用base64/v2ray订阅：https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub
 
