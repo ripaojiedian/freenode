@@ -16,8 +16,8 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 🇹🇼 台湾|付费版推荐 翻墙.com, server: nbq11.ntbq.dynu.net, port: 443, type: vmess, uuid: 6bd47438-d696-499a-bcd5-134e4145135a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: nbq11.ntbq.dynu.net, network: ws, ws-opts: {path: /b11, headers: {Host: nbq11.ntbq.dynu.net}}}
-  - {name: 🇭🇰 香港1|浏览器输入 翻墙.com, server: 122.193.251.200, port: 5953, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@wangcai_1}
-  - {name: 🇺🇸 美国|低价实惠 翻墙.com, server: bjcu.xzyunjiasu.icu, port: 33952, type: ss, cipher: aes-256-gcm, password: 5c8b210a-2f00-4292-964b-05281c7ad5d1, tfo: false}
+  - {name: 🇯🇵 日本|浏览器输入 翻墙.com, server: free-relay.themars.top, port: 32201, type: vmess, uuid: afdc69bd-67a1-46e9-9211-c544fe83a755, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv1.m3u8, headers: {Host: www.cctv.com}}}
+  - {name: 🇺🇸 美国2|低价实惠 翻墙.com, server: 95.164.37.15, port: 80, type: vmess, uuid: b5aafe8c-3527-4502-8add-9ca7417cfc88, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}}
   - {name: 🇯🇵 日本KT|@ripaojiedian, server: 139.227.182.207, port: 10016, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
   - {name: 🇯🇵 日本KT2|@ripaojiedian, server: 139.227.182.207, port: 10012, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
   - {name: 🇭🇰 香港KT1|@ripaojiedian, server: 8.217.178.215, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, tfo: false, plugin: obfs, plugin-opts: {mode: http, host: ""}}
@@ -25,18 +25,19 @@ proxies:
   - {name: 🇺🇸 美国3|@ripaojiedian, server: 188.214.157.5, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false}
   - {name: 🇹🇼 台湾3|浏览器输入 翻墙.com, server: nbq13.ntbq.dynu.net, port: 443, type: vmess, uuid: 92848f4e-a7af-4c58-aa42-c24e89345d5b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /b13, headers: {Host: nbq13.ntbq.dynu.net}}}
   - {name: 🇸🇬 新加坡|@ripaojiedian, server: c6.wuxianliulianng.xyz, port: 443, type: vmess, uuid: 1389986a-6eb6-4f7b-839c-9cfb83ab700d, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: golinkwuxian.top, network: ws, ws-opts: {path: /apple, headers: {Host: 6666.golinkwuxian.top}}}
-  - {name: 🇩🇪 德国|浏览器输入 翻墙.com, server: 112.29.94.23, port: 49226, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港2|@ripaojiedian, server: 183.233.187.214, port: 30972, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇫🇷 法国|浏览器输入 翻墙.com, server: f01.bzshare.com, port: 443, type: vmess, uuid: 732bf605-0d96-42f9-a5f4-dc5ec076600a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: fs.appls.eu.org, network: ws, ws-opts: {path: /D26xvdqUdCpvvPTz4R, headers: {Host: fs.appls.eu.org}}}
-  - {name: 🇭🇰 香港3|浏览器输入 翻墙.com, server: 36.141.40.59, port: 34996, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国1|浏览器输入 翻墙.com, server: 120.232.177.232, port: 1088, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 7521:12HsOu, obfs-param: TG@wangcai_1}
   - {name: 🇹🇼 台湾2|@ripaojiedian, server: fn300mtw015.flybirdline.xyz, port: 443, type: ss, cipher: aes-256-gcm, password: d7570e231c78, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn300mtw015.flybirdline.xyz, path: /uanrmeers, tls: true, mux: true, skip-cert-verify: false}}
   - {name: 🇭🇰 香港6|@ripaojiedian, server: 123.254.105.107, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 20544f92a1fb, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: jyn42.xjhssba.today, path: /vtprtcemdw, tls: true, mux: true, skip-cert-verify: false}}
-  - {name: 🇹🇼 台湾|浏览器输入 翻墙.com, server: 120.232.177.250, port: 1073, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 40575:fV3Nxq, obfs-param: TG@ripapojiedian}
-  - {name: 🇺🇸 美国2|@ripaojiedian, server: mf836f.micloud.buzz, port: 46036, type: vmess, uuid: bc230344-14d9-4922-9fb7-2e6513c5593e, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mf836f.micloud.buzz}}}
-  - {name: 🇰🇷 首尔特殊|浏览器输入 翻墙.com, server: 43.201.72.101, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-  - {name: 🇸🇬 新加坡特殊|浏览器输入 翻墙.com, server: 13.212.62.87, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 54.151.178.52, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-  - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 3.112.41.126, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇺🇸 美国5|浏览器输入 翻墙.com, server: uk1-vmess.greenssh.xyz, port: 80, type: vmess, uuid: b5aafe8c-3527-4502-8add-9ca7417cfc88, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: uk1-vmess.greenssh.xyz}}}
+  - {name: 🇭🇰 香港2|@ripaojiedian, server: mf805f.micloud.buzz, port: 46005, type: vmess, uuid: d60bfa14-b952-4d2c-809f-ce4730b02e02, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mf805f.micloud.buzz}}}
+  - {name: 🇭🇰 香港|浏览器输入 翻墙.com, server: 10.kccic2pa.xyz, port: 50010, type: vmess, uuid: 562163eb-1b57-4e49-811f-b36584c5516a, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 19.kccic2pa.xyz, port: 50019, type: vmess, uuid: 562163eb-1b57-4e49-811f-b36584c5516a, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本特殊|浏览器输入 翻墙.com, server: 43.207.109.28, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇸🇬 新加坡特殊|浏览器输入 翻墙.com, server: 13.229.114.65, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 54.255.75.189, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇸🇬 新加坡特殊|@ripaojiedian, server: 18.140.5.4, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇭🇰 香港3|@ripaojiedian, server: service.ouluyun9803.com, port: 20001, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, tfo: false}
+  - {name: 🇸🇬 新加坡3|浏览器输入 翻墙.com, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, tfo: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -44,8 +45,8 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇹🇼 台湾|付费版推荐 翻墙.com
-      - 🇭🇰 香港1|浏览器输入 翻墙.com
-      - 🇺🇸 美国|低价实惠 翻墙.com
+      - 🇯🇵 日本|浏览器输入 翻墙.com
+      - 🇺🇸 美国2|低价实惠 翻墙.com
       - 🇯🇵 日本KT|@ripaojiedian
       - 🇯🇵 日本KT2|@ripaojiedian
       - 🇭🇰 香港KT1|@ripaojiedian
@@ -53,18 +54,19 @@ proxy-groups:
       - 🇺🇸 美国3|@ripaojiedian
       - 🇹🇼 台湾3|浏览器输入 翻墙.com
       - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 德国|浏览器输入 翻墙.com
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇫🇷 法国|浏览器输入 翻墙.com
-      - 🇭🇰 香港3|浏览器输入 翻墙.com
+      - 🇺🇸 美国1|浏览器输入 翻墙.com
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
-      - 🇹🇼 台湾|浏览器输入 翻墙.com
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇰🇷 首尔特殊|浏览器输入 翻墙.com
+      - 🇺🇸 美国5|浏览器输入 翻墙.com
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港|浏览器输入 翻墙.com
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇯🇵 日本特殊|浏览器输入 翻墙.com
       - 🇸🇬 新加坡特殊|浏览器输入 翻墙.com
       - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇸🇬 新加坡特殊|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡3|浏览器输入 翻墙.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -72,8 +74,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇹🇼 台湾|付费版推荐 翻墙.com
-      - 🇭🇰 香港1|浏览器输入 翻墙.com
-      - 🇺🇸 美国|低价实惠 翻墙.com
+      - 🇯🇵 日本|浏览器输入 翻墙.com
+      - 🇺🇸 美国2|低价实惠 翻墙.com
       - 🇯🇵 日本KT|@ripaojiedian
       - 🇯🇵 日本KT2|@ripaojiedian
       - 🇭🇰 香港KT1|@ripaojiedian
@@ -81,18 +83,19 @@ proxy-groups:
       - 🇺🇸 美国3|@ripaojiedian
       - 🇹🇼 台湾3|浏览器输入 翻墙.com
       - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 德国|浏览器输入 翻墙.com
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇫🇷 法国|浏览器输入 翻墙.com
-      - 🇭🇰 香港3|浏览器输入 翻墙.com
+      - 🇺🇸 美国1|浏览器输入 翻墙.com
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
-      - 🇹🇼 台湾|浏览器输入 翻墙.com
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇰🇷 首尔特殊|浏览器输入 翻墙.com
+      - 🇺🇸 美国5|浏览器输入 翻墙.com
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港|浏览器输入 翻墙.com
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇯🇵 日本特殊|浏览器输入 翻墙.com
       - 🇸🇬 新加坡特殊|浏览器输入 翻墙.com
       - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇸🇬 新加坡特殊|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡3|浏览器输入 翻墙.com
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -100,8 +103,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇹🇼 台湾|付费版推荐 翻墙.com
-      - 🇭🇰 香港1|浏览器输入 翻墙.com
-      - 🇺🇸 美国|低价实惠 翻墙.com
+      - 🇯🇵 日本|浏览器输入 翻墙.com
+      - 🇺🇸 美国2|低价实惠 翻墙.com
       - 🇯🇵 日本KT|@ripaojiedian
       - 🇯🇵 日本KT2|@ripaojiedian
       - 🇭🇰 香港KT1|@ripaojiedian
@@ -109,26 +112,27 @@ proxy-groups:
       - 🇺🇸 美国3|@ripaojiedian
       - 🇹🇼 台湾3|浏览器输入 翻墙.com
       - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 德国|浏览器输入 翻墙.com
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇫🇷 法国|浏览器输入 翻墙.com
-      - 🇭🇰 香港3|浏览器输入 翻墙.com
+      - 🇺🇸 美国1|浏览器输入 翻墙.com
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
-      - 🇹🇼 台湾|浏览器输入 翻墙.com
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇰🇷 首尔特殊|浏览器输入 翻墙.com
+      - 🇺🇸 美国5|浏览器输入 翻墙.com
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港|浏览器输入 翻墙.com
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇯🇵 日本特殊|浏览器输入 翻墙.com
       - 🇸🇬 新加坡特殊|浏览器输入 翻墙.com
       - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇸🇬 新加坡特殊|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡3|浏览器输入 翻墙.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇹🇼 台湾|付费版推荐 翻墙.com
-      - 🇭🇰 香港1|浏览器输入 翻墙.com
-      - 🇺🇸 美国|低价实惠 翻墙.com
+      - 🇯🇵 日本|浏览器输入 翻墙.com
+      - 🇺🇸 美国2|低价实惠 翻墙.com
       - 🇯🇵 日本KT|@ripaojiedian
       - 🇯🇵 日本KT2|@ripaojiedian
       - 🇭🇰 香港KT1|@ripaojiedian
@@ -136,26 +140,27 @@ proxy-groups:
       - 🇺🇸 美国3|@ripaojiedian
       - 🇹🇼 台湾3|浏览器输入 翻墙.com
       - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 德国|浏览器输入 翻墙.com
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇫🇷 法国|浏览器输入 翻墙.com
-      - 🇭🇰 香港3|浏览器输入 翻墙.com
+      - 🇺🇸 美国1|浏览器输入 翻墙.com
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
-      - 🇹🇼 台湾|浏览器输入 翻墙.com
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇰🇷 首尔特殊|浏览器输入 翻墙.com
+      - 🇺🇸 美国5|浏览器输入 翻墙.com
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港|浏览器输入 翻墙.com
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇯🇵 日本特殊|浏览器输入 翻墙.com
       - 🇸🇬 新加坡特殊|浏览器输入 翻墙.com
       - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇸🇬 新加坡特殊|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡3|浏览器输入 翻墙.com
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇹🇼 台湾|付费版推荐 翻墙.com
-      - 🇭🇰 香港1|浏览器输入 翻墙.com
-      - 🇺🇸 美国|低价实惠 翻墙.com
+      - 🇯🇵 日本|浏览器输入 翻墙.com
+      - 🇺🇸 美国2|低价实惠 翻墙.com
       - 🇯🇵 日本KT|@ripaojiedian
       - 🇯🇵 日本KT2|@ripaojiedian
       - 🇭🇰 香港KT1|@ripaojiedian
@@ -163,26 +168,27 @@ proxy-groups:
       - 🇺🇸 美国3|@ripaojiedian
       - 🇹🇼 台湾3|浏览器输入 翻墙.com
       - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 德国|浏览器输入 翻墙.com
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇫🇷 法国|浏览器输入 翻墙.com
-      - 🇭🇰 香港3|浏览器输入 翻墙.com
+      - 🇺🇸 美国1|浏览器输入 翻墙.com
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
-      - 🇹🇼 台湾|浏览器输入 翻墙.com
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇰🇷 首尔特殊|浏览器输入 翻墙.com
+      - 🇺🇸 美国5|浏览器输入 翻墙.com
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港|浏览器输入 翻墙.com
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇯🇵 日本特殊|浏览器输入 翻墙.com
       - 🇸🇬 新加坡特殊|浏览器输入 翻墙.com
       - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇸🇬 新加坡特殊|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡3|浏览器输入 翻墙.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇹🇼 台湾|付费版推荐 翻墙.com
-      - 🇭🇰 香港1|浏览器输入 翻墙.com
-      - 🇺🇸 美国|低价实惠 翻墙.com
+      - 🇯🇵 日本|浏览器输入 翻墙.com
+      - 🇺🇸 美国2|低价实惠 翻墙.com
       - 🇯🇵 日本KT|@ripaojiedian
       - 🇯🇵 日本KT2|@ripaojiedian
       - 🇭🇰 香港KT1|@ripaojiedian
@@ -190,18 +196,19 @@ proxy-groups:
       - 🇺🇸 美国3|@ripaojiedian
       - 🇹🇼 台湾3|浏览器输入 翻墙.com
       - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 德国|浏览器输入 翻墙.com
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇫🇷 法国|浏览器输入 翻墙.com
-      - 🇭🇰 香港3|浏览器输入 翻墙.com
+      - 🇺🇸 美国1|浏览器输入 翻墙.com
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
-      - 🇹🇼 台湾|浏览器输入 翻墙.com
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇰🇷 首尔特殊|浏览器输入 翻墙.com
+      - 🇺🇸 美国5|浏览器输入 翻墙.com
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港|浏览器输入 翻墙.com
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇯🇵 日本特殊|浏览器输入 翻墙.com
       - 🇸🇬 新加坡特殊|浏览器输入 翻墙.com
       - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇸🇬 新加坡特殊|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡3|浏览器输入 翻墙.com
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -209,8 +216,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇹🇼 台湾|付费版推荐 翻墙.com
-      - 🇭🇰 香港1|浏览器输入 翻墙.com
-      - 🇺🇸 美国|低价实惠 翻墙.com
+      - 🇯🇵 日本|浏览器输入 翻墙.com
+      - 🇺🇸 美国2|低价实惠 翻墙.com
       - 🇯🇵 日本KT|@ripaojiedian
       - 🇯🇵 日本KT2|@ripaojiedian
       - 🇭🇰 香港KT1|@ripaojiedian
@@ -218,18 +225,19 @@ proxy-groups:
       - 🇺🇸 美国3|@ripaojiedian
       - 🇹🇼 台湾3|浏览器输入 翻墙.com
       - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 德国|浏览器输入 翻墙.com
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇫🇷 法国|浏览器输入 翻墙.com
-      - 🇭🇰 香港3|浏览器输入 翻墙.com
+      - 🇺🇸 美国1|浏览器输入 翻墙.com
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
-      - 🇹🇼 台湾|浏览器输入 翻墙.com
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇰🇷 首尔特殊|浏览器输入 翻墙.com
+      - 🇺🇸 美国5|浏览器输入 翻墙.com
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港|浏览器输入 翻墙.com
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇯🇵 日本特殊|浏览器输入 翻墙.com
       - 🇸🇬 新加坡特殊|浏览器输入 翻墙.com
       - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇸🇬 新加坡特殊|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡3|浏览器输入 翻墙.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -253,8 +261,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇹🇼 台湾|付费版推荐 翻墙.com
-      - 🇭🇰 香港1|浏览器输入 翻墙.com
-      - 🇺🇸 美国|低价实惠 翻墙.com
+      - 🇯🇵 日本|浏览器输入 翻墙.com
+      - 🇺🇸 美国2|低价实惠 翻墙.com
       - 🇯🇵 日本KT|@ripaojiedian
       - 🇯🇵 日本KT2|@ripaojiedian
       - 🇭🇰 香港KT1|@ripaojiedian
@@ -262,18 +270,19 @@ proxy-groups:
       - 🇺🇸 美国3|@ripaojiedian
       - 🇹🇼 台湾3|浏览器输入 翻墙.com
       - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 德国|浏览器输入 翻墙.com
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇫🇷 法国|浏览器输入 翻墙.com
-      - 🇭🇰 香港3|浏览器输入 翻墙.com
+      - 🇺🇸 美国1|浏览器输入 翻墙.com
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
-      - 🇹🇼 台湾|浏览器输入 翻墙.com
-      - 🇺🇸 美国2|@ripaojiedian
-      - 🇰🇷 首尔特殊|浏览器输入 翻墙.com
+      - 🇺🇸 美国5|浏览器输入 翻墙.com
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港|浏览器输入 翻墙.com
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇯🇵 日本特殊|浏览器输入 翻墙.com
       - 🇸🇬 新加坡特殊|浏览器输入 翻墙.com
       - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇸🇬 新加坡特殊|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡3|浏览器输入 翻墙.com
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
