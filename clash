@@ -15,27 +15,30 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇹🇼 台湾KT|@ripaojiedian, server: 122.118.138.244, port: 443, type: ss, cipher: aes-128-gcm, password: oiwym4ovI4Yb, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
+  - {name: 🇯🇵 日本KT|@ripaojiedian, server: 61.224.76.138, port: 10016, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
   - {name: 🇭🇰 香港KT|@ripaojiedian, server: 1.65.223.223, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
   - {name: 🇭🇰 香港KT2|@ripaojiedian, server: 47.243.59.144, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}}
+  - {name: 🇭🇰 香港|@ripaojiedian, server: 202.64.1.167, port: 443, type: trojan, password: 81d403ed407c426ab78102f1d7489660, sni: www.gpt123.one, skip-cert-verify: false}
   - {name: 🇭🇰 香港2|@ripaojiedian, server: 38.147.191.185, port: 10241, type: vmess, uuid: e820d6f7-57ef-4575-99da-bcd7d318c742, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港|@ripaojiedian, server: 183.179.168.53, port: 443, type: trojan, password: f1d923b3dfa043398ce91f857316cb33, sni: www.gpt123.one, skip-cert-verify: false}
-  - {name: 🇭🇰 香港3|@ripaojiedian, server: 183.236.51.6, port: 10801, type: trojan, password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false}
-  - {name: 🇹🇼 台湾|@ripaojiedian, server: 118.167.77.5, port: 4443, type: vmess, uuid: d20b031e-a477-45f1-8bfc-4cbea413a44e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇹🇼 台湾2|@ripaojiedian, server: taiwan.speed-mitce.top, port: 10027, type: ss, cipher: aes-128-gcm, password: 91491792-77B1-4ED6-BD01-52DC46B81AD0}
-  - {name: 🇹🇼 台湾3|@ripaojiedian, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: 27c6999b-58aa-48b4-b065-786d2badc074, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本|@ripaojiedian, server: ijmazhr5972b.nodelist.club, port: 1332, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27984:mFV84e, obfs-param: ""}
+  - {name: 🇹🇼 台湾, server: 118.167.70.229, port: 12002, type: vmess, uuid: 04b694b2-7022-4767-801b-6d21611f548b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇹🇼 台湾2|@ripaojiedian, server: gz.daxun.cyou, port: 38011, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇹🇼 台湾3|@ripaojiedian, server: 114.37.139.157, port: 2024, type: vmess, uuid: 88162ed0-5a4d-4d7b-8a5c-ed5b5fa70e0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本1|@ripaojiedian, server: 103.20.198.51, port: 43713, type: vmess, uuid: 5d3a1ace-4288-4442-98f2-50ff8795797a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本3|@ripaojiedian, server: service.ouluyun9803.com, port: 26668, type: ss, cipher: chacha20-ietf-poly1305, password: 100222a9-95bf-48f1-8e85-73336bf5fabc}
   - {name: 🇯🇵 日本2|@ripaojiedian, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: 5a1bd666-441a-4446-9b4b-3538f6209d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video/ibCT6z55, headers: {Host: agzbjszujp4.yofnhkfc.xyz}}}
+  - {name: 🇰🇷 韩国|@ripaojiedian, server: 45.154.14.165, port: 13593, type: vmess, uuid: 0764e6b0-3241-4962-a483-956bcc3612a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇸 美国|@ripaojiedian, server: www.crispyrainbow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}}
   - {name: 🇺🇸 美国2|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 8080, type: vmess, uuid: 5a1bd666-441a-4446-9b4b-3538f6209d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video/f8ZKTGaGoC/, headers: {Host: us5PhAx6xsj.fzbqfrse.xyz}}}
   - {name: 🇺🇸 美国3|@ripaojiedian, server: www.coldstone.club, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}}
-  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 104.17.25.3, port: 80, type: vmess, uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sgvpn.catnipballs.gay}}}
+  - {name: 🇺🇸 美国4|@ripaojiedian, server: 172.64.229.5, port: 80, type: vmess, uuid: 333c917d-7a3f-419e-a88a-36a420f0d791, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/geg/45?ed=2048", headers: {Host: jpli.edge.233.tw}}}
+  - {name: 🇸🇬 新加坡|@ripaojiedian, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: 100222a9-95bf-48f1-8e85-73336bf5fabc}
   - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 104.17.25.2, port: 80, type: vmess, uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sgvpn.catnipballs.gay}}}
-  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 54.199.220.251, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 13.113.16.207, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇸🇬 狮城特殊2|@ripaojiedian, server: 13.113.194.52, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 3.112.197.98, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 54.95.38.238, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 13.113.194.52, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇷🇴 罗马尼亚|@ripaojiedian, server: 104.17.25.1, port: 80, type: vmess, uuid: 4e23bd4f-cc11-4ade-fbc1-fcaf245662bf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lmnyvpn.catnipballs.gay}}}
+  - {name: 🇮🇳 印度|@ripaojiedian, server: 103.65.140.83, port: 38664, type: vmess, uuid: 6f052e34-456e-47f1-84a4-d0aa3b9e8b39, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇹🇭 泰国|@ripaojiedian, server: uydyfkghjrtcsdx.youcansee.cyou, port: 20167, type: ss, cipher: chacha20-ietf-poly1305, password: 81416f3c-5b00-4056-8e5f-d7ffdd884bf4}
   - {name: 🇩🇪 德国|@ripaojiedian, server: 104.17.25.1, port: 80, type: vmess, uuid: 3d668cbe-5464-4a79-aab5-e301b4e0f169, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dg.catnipballs.gay}}}
 proxy-groups:
@@ -44,27 +47,30 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇹🇼 台湾KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
       - 🇭🇰 香港KT|@ripaojiedian
       - 🇭🇰 香港KT2|@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本1|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 狮城特殊|@ripaojiedian
       - 🇸🇬 狮城特殊2|@ripaojiedian
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇰🇷 韩国特殊|@ripaojiedian
       - 🇷🇴 罗马尼亚|@ripaojiedian
+      - 🇮🇳 印度|@ripaojiedian
       - 🇹🇭 泰国|@ripaojiedian
       - 🇩🇪 德国|@ripaojiedian
   - name: ♻️ 自动选择
@@ -73,27 +79,30 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇹🇼 台湾KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
       - 🇭🇰 香港KT|@ripaojiedian
       - 🇭🇰 香港KT2|@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本1|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 狮城特殊|@ripaojiedian
       - 🇸🇬 狮城特殊2|@ripaojiedian
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇰🇷 韩国特殊|@ripaojiedian
       - 🇷🇴 罗马尼亚|@ripaojiedian
+      - 🇮🇳 印度|@ripaojiedian
       - 🇹🇭 泰国|@ripaojiedian
       - 🇩🇪 德国|@ripaojiedian
   - name: 🌍 国外媒体
@@ -102,27 +111,30 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼 台湾KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
       - 🇭🇰 香港KT|@ripaojiedian
       - 🇭🇰 香港KT2|@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本1|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 狮城特殊|@ripaojiedian
       - 🇸🇬 狮城特殊2|@ripaojiedian
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇰🇷 韩国特殊|@ripaojiedian
       - 🇷🇴 罗马尼亚|@ripaojiedian
+      - 🇮🇳 印度|@ripaojiedian
       - 🇹🇭 泰国|@ripaojiedian
       - 🇩🇪 德国|@ripaojiedian
   - name: 📲 电报信息
@@ -130,27 +142,30 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼 台湾KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
       - 🇭🇰 香港KT|@ripaojiedian
       - 🇭🇰 香港KT2|@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本1|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 狮城特殊|@ripaojiedian
       - 🇸🇬 狮城特殊2|@ripaojiedian
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇰🇷 韩国特殊|@ripaojiedian
       - 🇷🇴 罗马尼亚|@ripaojiedian
+      - 🇮🇳 印度|@ripaojiedian
       - 🇹🇭 泰国|@ripaojiedian
       - 🇩🇪 德国|@ripaojiedian
   - name: Ⓜ️ 微软服务
@@ -158,27 +173,30 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇹🇼 台湾KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
       - 🇭🇰 香港KT|@ripaojiedian
       - 🇭🇰 香港KT2|@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本1|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 狮城特殊|@ripaojiedian
       - 🇸🇬 狮城特殊2|@ripaojiedian
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇰🇷 韩国特殊|@ripaojiedian
       - 🇷🇴 罗马尼亚|@ripaojiedian
+      - 🇮🇳 印度|@ripaojiedian
       - 🇹🇭 泰国|@ripaojiedian
       - 🇩🇪 德国|@ripaojiedian
   - name: 🍎 苹果服务
@@ -186,27 +204,30 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼 台湾KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
       - 🇭🇰 香港KT|@ripaojiedian
       - 🇭🇰 香港KT2|@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本1|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 狮城特殊|@ripaojiedian
       - 🇸🇬 狮城特殊2|@ripaojiedian
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇰🇷 韩国特殊|@ripaojiedian
       - 🇷🇴 罗马尼亚|@ripaojiedian
+      - 🇮🇳 印度|@ripaojiedian
       - 🇹🇭 泰国|@ripaojiedian
       - 🇩🇪 德国|@ripaojiedian
   - name: 📢 谷歌FCM
@@ -215,27 +236,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼 台湾KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
       - 🇭🇰 香港KT|@ripaojiedian
       - 🇭🇰 香港KT2|@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本1|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 狮城特殊|@ripaojiedian
       - 🇸🇬 狮城特殊2|@ripaojiedian
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇰🇷 韩国特殊|@ripaojiedian
       - 🇷🇴 罗马尼亚|@ripaojiedian
+      - 🇮🇳 印度|@ripaojiedian
       - 🇹🇭 泰国|@ripaojiedian
       - 🇩🇪 德国|@ripaojiedian
   - name: 🎯 全球直连
@@ -260,27 +284,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼 台湾KT|@ripaojiedian
+      - 🇯🇵 日本KT|@ripaojiedian
       - 🇭🇰 香港KT|@ripaojiedian
       - 🇭🇰 香港KT2|@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本1|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 狮城特殊|@ripaojiedian
       - 🇸🇬 狮城特殊2|@ripaojiedian
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇰🇷 韩国特殊|@ripaojiedian
       - 🇷🇴 罗马尼亚|@ripaojiedian
+      - 🇮🇳 印度|@ripaojiedian
       - 🇹🇭 泰国|@ripaojiedian
       - 🇩🇪 德国|@ripaojiedian
 rules:
