@@ -38,7 +38,6 @@ proxies:
   - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 13.250.61.18, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
   - {name: 🇬🇧 英国|@ripaojiedian, server: 51.140.32.78, port: 54295, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: gevxg7mpES2FXZY1Q7B8FM, tfo: false}
   - {name: 🇱🇺 卢森堡|@ripaojiedian, server: 45.82.31.164, port: 3389, client-fingerprint: chrome, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇻🇳 越南|@ripaojiedian, server: 42.240.130.243, port: 33237, client-fingerprint: chrome, type: ss, cipher: none, password: 0cf52016-ba98-319d-de8c-84dbfac9cccc, tfo: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -68,7 +67,6 @@ proxy-groups:
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇬🇧 英国|@ripaojiedian
       - 🇱🇺 卢森堡|@ripaojiedian
-      - 🇻🇳 越南|@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -98,7 +96,6 @@ proxy-groups:
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇬🇧 英国|@ripaojiedian
       - 🇱🇺 卢森堡|@ripaojiedian
-      - 🇻🇳 越南|@ripaojiedian
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -128,7 +125,6 @@ proxy-groups:
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇬🇧 英国|@ripaojiedian
       - 🇱🇺 卢森堡|@ripaojiedian
-      - 🇻🇳 越南|@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
@@ -157,7 +153,6 @@ proxy-groups:
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇬🇧 英国|@ripaojiedian
       - 🇱🇺 卢森堡|@ripaojiedian
-      - 🇻🇳 越南|@ripaojiedian
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -186,7 +181,6 @@ proxy-groups:
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇬🇧 英国|@ripaojiedian
       - 🇱🇺 卢森堡|@ripaojiedian
-      - 🇻🇳 越南|@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -215,7 +209,6 @@ proxy-groups:
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇬🇧 英国|@ripaojiedian
       - 🇱🇺 卢森堡|@ripaojiedian
-      - 🇻🇳 越南|@ripaojiedian
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -245,7 +238,6 @@ proxy-groups:
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇬🇧 英国|@ripaojiedian
       - 🇱🇺 卢森堡|@ripaojiedian
-      - 🇻🇳 越南|@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -291,7 +283,6 @@ proxy-groups:
       - 🇯🇵 日本特殊|@ripaojiedian
       - 🇬🇧 英国|@ripaojiedian
       - 🇱🇺 卢森堡|@ripaojiedian
-      - 🇻🇳 越南|@ripaojiedian
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
