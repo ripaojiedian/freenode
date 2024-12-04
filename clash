@@ -15,7 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: tg频道:@ripaojiedian,   - {name: tg频道:@ripaojiedian, type: http, server: hk9.ftq.ink, port: 4000, tls: true }
+  - {name: tg频道:@ripaojiedian, type: http, server: hk9.ftq.ink, port: 4000, tls: true }
   - {name: 🇭🇰 香港|@ripaojiedian, server: 36.151.192.242, port: 51377, client-fingerprint: chrome, type: trojan, password: DNUMdmnJ, skip-cert-verify: true}
   - {name: 🇭🇰 香港2|@ripaojiedian, server: 36.151.192.196, port: 25241, client-fingerprint: chrome, type: trojan, password: QwwHvrnN, skip-cert-verify: true}
   - {name: 🇭🇰 香港3|@ripaojiedian, server: 120.232.153.63, port: 40972, client-fingerprint: chrome, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
