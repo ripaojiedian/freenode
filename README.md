@@ -24,9 +24,9 @@ clash订阅：https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
 clash订阅：https://raw.kkgithub.com/ripaojiedian/freenode/main/clash
          
          两个镜像哪个能用用哪个
-https://raw.ixnic.net/ripaojiedian/freenode/main/clash
+https://raw.dgithub.xyz/ripaojiedian/freenode/main/clash
 
 通用base64/v2ray订阅: https://raw.kkgithub.com/ripaojiedian/freenode/main/sub
        
          两个镜像哪个能用用哪个
-https://raw.ixnic.net/ripaojiedian/freenode/main/sub
+https://raw.dgithub.xyz/ripaojiedian/freenode/main/sub
