@@ -22,6 +22,7 @@ proxies:
   - {name: 🇭🇰 香港4|@ripaojiedian, server: 202.181.103.246, port: 443, client-fingerprint: chrome, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: false}
   - {name: 🇭🇰 香港5|@ripaojiedian, server: 45.89.233.236, port: 57586, client-fingerprint: chrome, type: vmess, uuid: 862d48d2-115b-432d-8115-f5aaa1a4b186, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港6|@ripaojiedian, server: 160.16.236.32, port: 443, client-fingerprint: chrome, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇭🇰 香港HK|@ripaojiedian, server: 38.147.188.112, port: 24939, client-fingerprint: chrome, type: vmess, uuid: 928408df-3114-4b57-b852-f8d120ce056c, alterId: 0, cipher: auto, udp: true, network: http, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇹🇼 台湾|@ripaojiedian, server: auto.wgnmdgfw.com, port: 16327, client-fingerprint: chrome, type: trojan, password: 90f45c05-917f-3b1b-a582-899cfe4cf7b3, sni: eplcgame.com, skip-cert-verify: false}
   - {name: 🇯🇵 日本|@ripaojiedian, server: cn01.efan8867801.xyz, port: 8766, client-fingerprint: chrome, type: ss, cipher: rc4-md5, password: efanccyun, tfo: false, plugin: obfs, plugin-opts: {mode: http, host: 202509121565513-HpWeCj5Hza.download.microsoft.com}}
   - {name: 🇯🇵 日本2|@ripaojiedian, server: 137.220.142.139, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 8808e9f11454, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: jp5v1.lingjfjkm002.com, path: /nvcnjrmkggoy, tls: true, mux: false, skip-cert-verify: false}}
@@ -48,6 +49,7 @@ proxy-groups:
       - 🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 香港HK|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
@@ -74,6 +76,7 @@ proxy-groups:
       - 🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 香港HK|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
@@ -100,6 +103,7 @@ proxy-groups:
       - 🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 香港HK|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
@@ -125,6 +129,7 @@ proxy-groups:
       - 🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 香港HK|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
@@ -150,6 +155,7 @@ proxy-groups:
       - 🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 香港HK|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
@@ -175,6 +181,7 @@ proxy-groups:
       - 🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 香港HK|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
@@ -201,6 +208,7 @@ proxy-groups:
       - 🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 香港HK|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
@@ -243,6 +251,7 @@ proxy-groups:
       - 🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 香港HK|@ripaojiedian
       - 🇹🇼 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
