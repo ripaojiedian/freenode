@@ -3,27 +3,37 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: :9090
+dns:
+  enable: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 proxies:
   - {name: tg频道:@ripaojiedian, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇭🇰 香港|@ripaojiedian, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港2|@ripaojiedian, server: 103.103.245.158, port: 443, type: ss, cipher: aes-256-gcm, password: ccf426f1fe78, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: newroot2v1.dsjsapp.com, path: /zksuapgx, tls: true, mux: true, skip-cert-verify: false}}
   - {name: 🇭🇰 香港3|@ripaojiedian, server: 58.152.18.192, port: 443, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇭🇰 香港4|@ripaojiedian, server: 58.152.25.20, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇭🇰 香港5|@ripaojiedian, server: 58.152.30.175, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇭🇰 香港4|@ripaojiedian, server: 58.152.25.20, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false}
+  - {name: 🇭🇰 香港5|@ripaojiedian, server: 58.152.30.175, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false}
   - {name: 🇭🇰 香港6|@ripaojiedian, server: 47.243.69.126, port: 31904, type: vmess, uuid: 22550b74-3ebf-49b5-ea36-3078b5d47ed9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港7|@ripaojiedian, server: a48b0e7b-t6ngg0-t8tsp0-1szmi.hk3.p5pv.com, port: 80, type: vmess, uuid: ba151628-b3a2-11ef-bdb9-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: 🇨🇳 台湾|@ripaojiedian, server: 60.249.14.96, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: db5fe62:193531}}
-  - {name: 🇯🇵 日本|@ripaojiedian, server: 52.195.176.26, port: 5156, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇯🇵 日本2|@ripaojiedian, server: 160.16.236.32, port: 3093, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 日本3|@ripaojiedian, server: 160.16.138.24, port: 1331, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇯🇵 日本4|@ripaojiedian, server: 172.237.6.53, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: e2322f9:87491}}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 160.16.124.55, port: 2760, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 160.16.81.84, port: 2760, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 52.199.79.149, port: 1196, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: 🇺🇸 美国|@ripaojiedian, server: 160.16.236.32, port: 4054, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇺🇸 美国2|@ripaojiedian, server: 160.16.81.84, port: 4054, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇺🇸 美国3|@ripaojiedian, server: 116.49.237.130, port: 1112, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇯🇵 日本|@ripaojiedian, server: 13.115.187.38, port: 5156, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false}
+  - {name: 🇯🇵 日本2|@ripaojiedian, server: 153.121.51.29, port: 3169, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇯🇵 日本3|@ripaojiedian, server: 160.16.236.32, port: 3093, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 153.121.51.29, port: 127, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 160.16.130.66, port: 1596, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 16.163.138.120, port: 2752, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 160.16.124.55, port: 4054, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇺🇸 美国2|@ripaojiedian, server: 160.16.63.16, port: 4054, type: trojan, password: 79314e99f0a473fe86efc7827942ad00, sni: www.nintendogames.net, skip-cert-verify: false}
+  - {name: 🇺🇸 美国3|@ripaojiedian, server: 43.206.254.28, port: 2569, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false}
+  - {name: 🇻🇳 越南|@ripaojiedian, server: 103.186.154.52, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -38,17 +48,16 @@ proxy-groups:
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 🇭🇰 香港7|@ripaojiedian
-      - 🇨🇳 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -63,17 +72,16 @@ proxy-groups:
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 🇭🇰 香港7|@ripaojiedian
-      - 🇨🇳 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -88,17 +96,16 @@ proxy-groups:
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 🇭🇰 香港7|@ripaojiedian
-      - 🇨🇳 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
@@ -112,17 +119,16 @@ proxy-groups:
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 🇭🇰 香港7|@ripaojiedian
-      - 🇨🇳 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -136,17 +142,16 @@ proxy-groups:
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 🇭🇰 香港7|@ripaojiedian
-      - 🇨🇳 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -160,17 +165,16 @@ proxy-groups:
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 🇭🇰 香港7|@ripaojiedian
-      - 🇨🇳 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -185,17 +189,16 @@ proxy-groups:
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 🇭🇰 香港7|@ripaojiedian
-      - 🇨🇳 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -226,17 +229,16 @@ proxy-groups:
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港6|@ripaojiedian
       - 🇭🇰 香港7|@ripaojiedian
-      - 🇨🇳 台湾|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本4|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
+      - 🇻🇳 越南|@ripaojiedian
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
