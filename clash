@@ -1,245 +1,679 @@
 port: 7890
 socks-port: 7891
 allow-lan: true
-mode: rule
+bind-address: "*"
+ipv6: false
+mode: Rule
 log-level: info
-external-controller: 127.0.0.1:6170
-ipv6: true
-unified-delay: false
-tcp-concurrent: true
-global-client-fingerprint: chrome
-hosts:
-  mtalk.google.com: 108.177.125.188
-experimental:
-  ignore-resolve-fail: true
-cfw-latency-url: https://connectivitycheck.gstatic.com/generate_204
-cfw-latency-type: 1
-cfw-latency-timeout: 5000
-cfw-conn-break-strategy: true
-clash-for-android:
-  append-system-dns: false
-  ui-subtitle-pattern: "[一-龥]{2,4}"
-url-rewrite:
-  - ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
-  - ^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
-sniffer:
-  enable: true
-  sniff:
-    TLS: {ports: [1-65535], override-destination: true}
-    HTTP: {ports: [1-65535], override-destination: true}
-    QUIC: {ports: [1-65535], override-destination: true}
-  skip-domain:
-    - Mijia Cloud
-    - dlg.io.mi.com
-    - +.push.apple.com
-  parse-pure-ip: false
-  force-dns-mapping: true
-  override-destination: true
+external-controller: 127.0.0.1:9090
 dns:
-  ipv6: false
   enable: true
-  prefer-h3: true
-  listen: 0.0.0.0:1053
-  enhanced-mode: fake-ip
-  use-hosts: false
-  default-nameserver: [119.28.28.28, 119.29.29.29, 223.5.5.5, 223.6.6.6]
-  nameserver: [119.29.29.29, 223.5.5.5, tls://dot.pub:853, tls://dns.alidns.com:853, https://doh.pub:443/dns-query, https://dns.alidns.com:443/dns-query]
-  fallback: [https://dns.cloudflare.com/dns-query, https://doh.dns.sb/dns-query, tls://8.8.4.4:853]
-  fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32]}
-  fake-ip-range: 198.18.0.1/15
-  fake-ip-filter: ["*.lan", "*.localdomain", "*.example", "*.invalid", "*.localhost", "*.test", "*.local"]
+  ipv6: false
+  listen: 0.0.0.0:53
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.arpa"
+    - time.*.com
+    - ntp.*.com
+    - +.market.xiaomi.com
+    - localhost.ptlogin2.qq.com
+    - "*.msftncsi.com"
+    - www.msftconnecttest.com
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  nameserver-policy:
+    geosite:cn:
+      - 119.29.29.29
+      - 223.5.5.5
+    geosite:geolocation-!cn:
+      - tls://1.0.0.1:853
+      - tls://dns.google:853
+  proxy-server-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 1.1.1.1
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    ipcidr:
+      - 240.0.0.0/4
 proxies:
-  - {name: tg频道:@ripaojiedian, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇭🇰 香港2|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 44837, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇭🇰 香港1|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 14699, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: fe-static.deepseek.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港4|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 41495, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇺🇸 美国3|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 19466, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇭🇰 香港3|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 34926, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: wximg.qq.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港5|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 43638, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾1|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 47786, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾2|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 54815, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇯🇵 日本1|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 24914, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇯🇵 日本2|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 18295, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇯🇵 日本3|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 43992, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: wximg.qq.com, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡1|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 47966, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 42338, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 37212, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国1|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 29628, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国2|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 18572, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
-  - {name: 🇺🇸 美国1|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 49049, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: fe-static.deepseek.com, skip-cert-verify: false}
-  - {name: 🇺🇸 美国2|@ripaojiedian, server: ench-snet-app.w-ctrip.cn, port: 17285, type: trojan, password: b17e9b52db9623bd6c16eea3d7adb5b3, sni: cm.g.doubleclick.net, skip-cert-verify: false}
+  - {name: 🇯🇵 JP1|@ripaojiedian, server: 213.152.165.201, port: 2090, type: vless, uuid: b1b03489-5f07-4c91-af90-438bb8661787, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP2|@ripaojiedian, server: 213.152.165.204, port: 2090, type: vless, uuid: b1b03489-5f07-4c91-af90-438bb8661787, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP3|@ripaojiedian, server: 213.152.165.200, port: 2090, type: vless, uuid: b1b03489-5f07-4c91-af90-438bb8661787, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP4|@ripaojiedian, server: 188.95.52.98, port: 2090, type: vless, uuid: b1b03489-5f07-4c91-af90-438bb8661787, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP5|@ripaojiedian, server: 188.95.52.93, port: 2090, type: vless, uuid: b1b03489-5f07-4c91-af90-438bb8661787, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP6|@ripaojiedian, server: 188.95.52.95, port: 2090, type: vless, uuid: b1b03489-5f07-4c91-af90-438bb8661787, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP7|@ripaojiedian, server: 188.95.52.94, port: 2090, type: vless, uuid: b1b03489-5f07-4c91-af90-438bb8661787, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP8|@ripaojiedian, server: 188.95.52.97, port: 2090, type: vless, uuid: b1b03489-5f07-4c91-af90-438bb8661787, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK1|@ripaojiedian, server: 66.90.115.125, port: 443, type: vless, uuid: d1e0a076-034f-4641-823c-4a5b5114a97e, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k, short-id: "08a4b1f473932632"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK2|@ripaojiedian, server: 66.90.115.131, port: 443, type: vless, uuid: d1e0a076-034f-4641-823c-4a5b5114a97e, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k, short-id: "08a4b1f473932632"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK3|@ripaojiedian, server: 66.90.115.130, port: 443, type: vless, uuid: d1e0a076-034f-4641-823c-4a5b5114a97e, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k, short-id: "08a4b1f473932632"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 SG1|@ripaojiedian, server: 67.159.49.37, port: 443, type: vless, uuid: a94b6fd3-c1d7-4e2a-b8cb-30eaca88b6dd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 SG2|@ripaojiedian, server: 67.159.49.27, port: 443, type: vless, uuid: a94b6fd3-c1d7-4e2a-b8cb-30eaca88b6dd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 SG3|@ripaojiedian, server: 67.159.49.28, port: 443, type: vless, uuid: a94b6fd3-c1d7-4e2a-b8cb-30eaca88b6dd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 SG4|@ripaojiedian, server: 50.7.252.50, port: 443, type: vless, uuid: a94b6fd3-c1d7-4e2a-b8cb-30eaca88b6dd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 SG5|@ripaojiedian, server: 67.159.49.34, port: 443, type: vless, uuid: a94b6fd3-c1d7-4e2a-b8cb-30eaca88b6dd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 SG6|@ripaojiedian, server: 67.159.49.38, port: 443, type: vless, uuid: a94b6fd3-c1d7-4e2a-b8cb-30eaca88b6dd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 SG9|@ripaojiedian, server: 67.159.49.35, port: 443, type: vless, uuid: a94b6fd3-c1d7-4e2a-b8cb-30eaca88b6dd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 SG8|@ripaojiedian, server: 67.159.49.29, port: 443, type: vless, uuid: a94b6fd3-c1d7-4e2a-b8cb-30eaca88b6dd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 SG9|@ripaojiedian 2, server: 67.159.49.30, port: 443, type: vless, uuid: a94b6fd3-c1d7-4e2a-b8cb-30eaca88b6dd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 SG10|@ripaojiedian, server: 67.159.49.36, port: 443, type: vless, uuid: a94b6fd3-c1d7-4e2a-b8cb-30eaca88b6dd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US1|@ripaojiedian, server: 38.145.220.38, port: 443, type: vless, uuid: 59f5a012-4c39-428a-b033-68791bf32810, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo, short-id: "66d62ef550107695"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US2|@ripaojiedian, server: 38.34.190.212, port: 443, type: vless, uuid: 59f5a012-4c39-428a-b033-68791bf32810, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo, short-id: "66d62ef550107695"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US4|@ripaojiedian, server: 38.145.220.58, port: 443, type: vless, uuid: 59f5a012-4c39-428a-b033-68791bf32810, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo, short-id: "66d62ef550107695"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US5|@ripaojiedian, server: 38.145.220.39, port: 443, type: vless, uuid: 59f5a012-4c39-428a-b033-68791bf32810, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo, short-id: "66d62ef550107695"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US3|@ripaojiedian, server: 38.34.190.211, port: 443, type: vless, uuid: 59f5a012-4c39-428a-b033-68791bf32810, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo, short-id: "66d62ef550107695"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US6|@ripaojiedian, server: 38.34.190.210, port: 443, type: vless, uuid: 59f5a012-4c39-428a-b033-68791bf32810, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo, short-id: "66d62ef550107695"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 CA1|@ripaojiedian, server: 213.152.165.200, port: 2093, type: vless, uuid: 8c326fd6-25f4-4537-8bc9-9c1c746ab846, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM, short-id: "8a9725533854a7e8"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 CA2|@ripaojiedian, server: 213.152.165.201, port: 2093, type: vless, uuid: 8c326fd6-25f4-4537-8bc9-9c1c746ab846, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM, short-id: "8a9725533854a7e8"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 CA3|@ripaojiedian, server: 213.152.165.204, port: 2093, type: vless, uuid: 8c326fd6-25f4-4537-8bc9-9c1c746ab846, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM, short-id: "8a9725533854a7e8"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 CA-ca-1-06, server: 188.95.52.98, port: 2093, type: vless, uuid: 8c326fd6-25f4-4537-8bc9-9c1c746ab846, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM, short-id: "8a9725533854a7e8"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 CA-ca-1-07, server: 188.95.52.93, port: 2093, type: vless, uuid: 8c326fd6-25f4-4537-8bc9-9c1c746ab846, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM, short-id: "8a9725533854a7e8"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 CA-ca-1-08, server: 188.95.52.95, port: 2093, type: vless, uuid: 8c326fd6-25f4-4537-8bc9-9c1c746ab846, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM, short-id: "8a9725533854a7e8"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 CA-ca-1-09, server: 188.95.52.94, port: 2093, type: vless, uuid: 8c326fd6-25f4-4537-8bc9-9c1c746ab846, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM, short-id: "8a9725533854a7e8"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 CA-ca-1-10, server: 188.95.52.97, port: 2093, type: vless, uuid: 8c326fd6-25f4-4537-8bc9-9c1c746ab846, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM, short-id: "8a9725533854a7e8"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 CA-ca-1-11, server: 188.95.52.96, port: 2093, type: vless, uuid: 8c326fd6-25f4-4537-8bc9-9c1c746ab846, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM, short-id: "8a9725533854a7e8"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE-de-1-02, server: 213.152.165.200, port: 2094, type: vless, uuid: 3121d3d8-d73a-48c7-adfe-e8143f535cbb, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE-de-1-03, server: 213.152.165.201, port: 2094, type: vless, uuid: 3121d3d8-d73a-48c7-adfe-e8143f535cbb, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE-de-1-05, server: 213.152.165.204, port: 2094, type: vless, uuid: 3121d3d8-d73a-48c7-adfe-e8143f535cbb, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE-de-1-06, server: 188.95.52.98, port: 2094, type: vless, uuid: 3121d3d8-d73a-48c7-adfe-e8143f535cbb, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE-de-1-07, server: 188.95.52.93, port: 2094, type: vless, uuid: 3121d3d8-d73a-48c7-adfe-e8143f535cbb, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE-de-1-08, server: 188.95.52.95, port: 2094, type: vless, uuid: 3121d3d8-d73a-48c7-adfe-e8143f535cbb, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE-de-1-09, server: 188.95.52.94, port: 2094, type: vless, uuid: 3121d3d8-d73a-48c7-adfe-e8143f535cbb, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE-de-1-10, server: 188.95.52.97, port: 2094, type: vless, uuid: 3121d3d8-d73a-48c7-adfe-e8143f535cbb, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE-de-1-11, server: 188.95.52.96, port: 2094, type: vless, uuid: 3121d3d8-d73a-48c7-adfe-e8143f535cbb, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-nl-1-01, server: 213.152.165.199, port: 443, type: vless, uuid: b952c359-7b59-41f4-8fa4-c06648c3fe51, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0, short-id: "906609ffc9e8d9fe"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-nl-1-02, server: 213.152.165.201, port: 443, type: vless, uuid: b952c359-7b59-41f4-8fa4-c06648c3fe51, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0, short-id: "906609ffc9e8d9fe"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-nl-1-03, server: 213.152.165.202, port: 443, type: vless, uuid: b952c359-7b59-41f4-8fa4-c06648c3fe51, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0, short-id: "906609ffc9e8d9fe"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-nl-1-04, server: 213.152.165.200, port: 443, type: vless, uuid: b952c359-7b59-41f4-8fa4-c06648c3fe51, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0, short-id: "906609ffc9e8d9fe"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-nl-1-05, server: 213.152.165.198, port: 443, type: vless, uuid: b952c359-7b59-41f4-8fa4-c06648c3fe51, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0, short-id: "906609ffc9e8d9fe"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-nl-1-06, server: 213.152.165.195, port: 443, type: vless, uuid: b952c359-7b59-41f4-8fa4-c06648c3fe51, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0, short-id: "906609ffc9e8d9fe"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-nl-1-07, server: 213.152.165.205, port: 443, type: vless, uuid: b952c359-7b59-41f4-8fa4-c06648c3fe51, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0, short-id: "906609ffc9e8d9fe"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-nl-1-08, server: 213.152.165.197, port: 443, type: vless, uuid: b952c359-7b59-41f4-8fa4-c06648c3fe51, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0, short-id: "906609ffc9e8d9fe"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-nl-1-09, server: 213.152.165.204, port: 443, type: vless, uuid: b952c359-7b59-41f4-8fa4-c06648c3fe51, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0, short-id: "906609ffc9e8d9fe"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-nl-1-10, server: 213.152.165.206, port: 443, type: vless, uuid: b952c359-7b59-41f4-8fa4-c06648c3fe51, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0, short-id: "906609ffc9e8d9fe"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 FR-fr-1-02, server: 213.152.165.200, port: 2092, type: vless, uuid: 664e0518-ffd7-4599-8e16-95868f5e3fb0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI, short-id: "716b7eba38125f3a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 FR-fr-1-03, server: 213.152.165.201, port: 2092, type: vless, uuid: 664e0518-ffd7-4599-8e16-95868f5e3fb0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI, short-id: "716b7eba38125f3a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 FR-fr-1-05, server: 213.152.165.204, port: 2092, type: vless, uuid: 664e0518-ffd7-4599-8e16-95868f5e3fb0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI, short-id: "716b7eba38125f3a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 FR-fr-1-06, server: 188.95.52.98, port: 2092, type: vless, uuid: 664e0518-ffd7-4599-8e16-95868f5e3fb0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI, short-id: "716b7eba38125f3a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 FR-fr-1-07, server: 188.95.52.93, port: 2092, type: vless, uuid: 664e0518-ffd7-4599-8e16-95868f5e3fb0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI, short-id: "716b7eba38125f3a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 FR-fr-1-08, server: 188.95.52.95, port: 2092, type: vless, uuid: 664e0518-ffd7-4599-8e16-95868f5e3fb0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI, short-id: "716b7eba38125f3a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 FR-fr-1-09, server: 188.95.52.94, port: 2092, type: vless, uuid: 664e0518-ffd7-4599-8e16-95868f5e3fb0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI, short-id: "716b7eba38125f3a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 FR-fr-1-10, server: 188.95.52.97, port: 2092, type: vless, uuid: 664e0518-ffd7-4599-8e16-95868f5e3fb0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI, short-id: "716b7eba38125f3a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇷 FR-fr-1-11, server: 188.95.52.96, port: 2092, type: vless, uuid: 664e0518-ffd7-4599-8e16-95868f5e3fb0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI, short-id: "716b7eba38125f3a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇪🇸 ES-es-1-02, server: 213.152.165.200, port: 2095, type: vless, uuid: 2c4627c0-f59d-4bf4-85dd-9a5bae6ccc8a, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI, short-id: "3869d49a9a79e06a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇪🇸 ES-es-1-03, server: 213.152.165.201, port: 2095, type: vless, uuid: 2c4627c0-f59d-4bf4-85dd-9a5bae6ccc8a, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI, short-id: "3869d49a9a79e06a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇪🇸 ES-es-1-05, server: 213.152.165.204, port: 2095, type: vless, uuid: 2c4627c0-f59d-4bf4-85dd-9a5bae6ccc8a, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI, short-id: "3869d49a9a79e06a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇪🇸 ES-es-1-06, server: 188.95.52.98, port: 2095, type: vless, uuid: 2c4627c0-f59d-4bf4-85dd-9a5bae6ccc8a, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI, short-id: "3869d49a9a79e06a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇪🇸 ES-es-1-07, server: 188.95.52.93, port: 2095, type: vless, uuid: 2c4627c0-f59d-4bf4-85dd-9a5bae6ccc8a, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI, short-id: "3869d49a9a79e06a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇪🇸 ES-es-1-08, server: 188.95.52.95, port: 2095, type: vless, uuid: 2c4627c0-f59d-4bf4-85dd-9a5bae6ccc8a, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI, short-id: "3869d49a9a79e06a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇪🇸 ES-es-1-09, server: 188.95.52.94, port: 2095, type: vless, uuid: 2c4627c0-f59d-4bf4-85dd-9a5bae6ccc8a, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI, short-id: "3869d49a9a79e06a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇪🇸 ES-es-1-10, server: 188.95.52.97, port: 2095, type: vless, uuid: 2c4627c0-f59d-4bf4-85dd-9a5bae6ccc8a, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI, short-id: "3869d49a9a79e06a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇪🇸 ES-es-1-11, server: 188.95.52.96, port: 2095, type: vless, uuid: 2c4627c0-f59d-4bf4-85dd-9a5bae6ccc8a, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI, short-id: "3869d49a9a79e06a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - tg频道:@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港1|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇨🇳 台湾1|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇯🇵 日本1|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡1|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 JP1|@ripaojiedian
+      - 🇯🇵 JP2|@ripaojiedian
+      - 🇯🇵 JP3|@ripaojiedian
+      - 🇯🇵 JP4|@ripaojiedian
+      - 🇯🇵 JP5|@ripaojiedian
+      - 🇯🇵 JP6|@ripaojiedian
+      - 🇯🇵 JP7|@ripaojiedian
+      - 🇯🇵 JP8|@ripaojiedian
+      - 🇭🇰 HK1|@ripaojiedian
+      - 🇭🇰 HK2|@ripaojiedian
+      - 🇭🇰 HK3|@ripaojiedian
+      - 🇸🇬 SG1|@ripaojiedian
+      - 🇸🇬 SG2|@ripaojiedian
+      - 🇸🇬 SG3|@ripaojiedian
+      - 🇸🇬 SG4|@ripaojiedian
+      - 🇸🇬 SG5|@ripaojiedian
+      - 🇸🇬 SG6|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian
+      - 🇸🇬 SG8|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian 2
+      - 🇸🇬 SG10|@ripaojiedian
+      - 🇺🇸 US1|@ripaojiedian
+      - 🇺🇸 US2|@ripaojiedian
+      - 🇺🇸 US4|@ripaojiedian
+      - 🇺🇸 US5|@ripaojiedian
+      - 🇺🇸 US3|@ripaojiedian
+      - 🇺🇸 US6|@ripaojiedian
+      - 🇨🇦 CA1|@ripaojiedian
+      - 🇨🇦 CA2|@ripaojiedian
+      - 🇨🇦 CA3|@ripaojiedian
+      - 🇨🇦 CA-ca-1-06
+      - 🇨🇦 CA-ca-1-07
+      - 🇨🇦 CA-ca-1-08
+      - 🇨🇦 CA-ca-1-09
+      - 🇨🇦 CA-ca-1-10
+      - 🇨🇦 CA-ca-1-11
+      - 🇩🇪 DE-de-1-02
+      - 🇩🇪 DE-de-1-03
+      - 🇩🇪 DE-de-1-05
+      - 🇩🇪 DE-de-1-06
+      - 🇩🇪 DE-de-1-07
+      - 🇩🇪 DE-de-1-08
+      - 🇩🇪 DE-de-1-09
+      - 🇩🇪 DE-de-1-10
+      - 🇩🇪 DE-de-1-11
+      - 🇳🇱 NL-nl-1-01
+      - 🇳🇱 NL-nl-1-02
+      - 🇳🇱 NL-nl-1-03
+      - 🇳🇱 NL-nl-1-04
+      - 🇳🇱 NL-nl-1-05
+      - 🇳🇱 NL-nl-1-06
+      - 🇳🇱 NL-nl-1-07
+      - 🇳🇱 NL-nl-1-08
+      - 🇳🇱 NL-nl-1-09
+      - 🇳🇱 NL-nl-1-10
+      - 🇫🇷 FR-fr-1-02
+      - 🇫🇷 FR-fr-1-03
+      - 🇫🇷 FR-fr-1-05
+      - 🇫🇷 FR-fr-1-06
+      - 🇫🇷 FR-fr-1-07
+      - 🇫🇷 FR-fr-1-08
+      - 🇫🇷 FR-fr-1-09
+      - 🇫🇷 FR-fr-1-10
+      - 🇫🇷 FR-fr-1-11
+      - 🇪🇸 ES-es-1-02
+      - 🇪🇸 ES-es-1-03
+      - 🇪🇸 ES-es-1-05
+      - 🇪🇸 ES-es-1-06
+      - 🇪🇸 ES-es-1-07
+      - 🇪🇸 ES-es-1-08
+      - 🇪🇸 ES-es-1-09
+      - 🇪🇸 ES-es-1-10
+      - 🇪🇸 ES-es-1-11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - tg频道:@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港1|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇨🇳 台湾1|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇯🇵 日本1|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡1|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 JP1|@ripaojiedian
+      - 🇯🇵 JP2|@ripaojiedian
+      - 🇯🇵 JP3|@ripaojiedian
+      - 🇯🇵 JP4|@ripaojiedian
+      - 🇯🇵 JP5|@ripaojiedian
+      - 🇯🇵 JP6|@ripaojiedian
+      - 🇯🇵 JP7|@ripaojiedian
+      - 🇯🇵 JP8|@ripaojiedian
+      - 🇭🇰 HK1|@ripaojiedian
+      - 🇭🇰 HK2|@ripaojiedian
+      - 🇭🇰 HK3|@ripaojiedian
+      - 🇸🇬 SG1|@ripaojiedian
+      - 🇸🇬 SG2|@ripaojiedian
+      - 🇸🇬 SG3|@ripaojiedian
+      - 🇸🇬 SG4|@ripaojiedian
+      - 🇸🇬 SG5|@ripaojiedian
+      - 🇸🇬 SG6|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian
+      - 🇸🇬 SG8|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian 2
+      - 🇸🇬 SG10|@ripaojiedian
+      - 🇺🇸 US1|@ripaojiedian
+      - 🇺🇸 US2|@ripaojiedian
+      - 🇺🇸 US4|@ripaojiedian
+      - 🇺🇸 US5|@ripaojiedian
+      - 🇺🇸 US3|@ripaojiedian
+      - 🇺🇸 US6|@ripaojiedian
+      - 🇨🇦 CA1|@ripaojiedian
+      - 🇨🇦 CA2|@ripaojiedian
+      - 🇨🇦 CA3|@ripaojiedian
+      - 🇨🇦 CA-ca-1-06
+      - 🇨🇦 CA-ca-1-07
+      - 🇨🇦 CA-ca-1-08
+      - 🇨🇦 CA-ca-1-09
+      - 🇨🇦 CA-ca-1-10
+      - 🇨🇦 CA-ca-1-11
+      - 🇩🇪 DE-de-1-02
+      - 🇩🇪 DE-de-1-03
+      - 🇩🇪 DE-de-1-05
+      - 🇩🇪 DE-de-1-06
+      - 🇩🇪 DE-de-1-07
+      - 🇩🇪 DE-de-1-08
+      - 🇩🇪 DE-de-1-09
+      - 🇩🇪 DE-de-1-10
+      - 🇩🇪 DE-de-1-11
+      - 🇳🇱 NL-nl-1-01
+      - 🇳🇱 NL-nl-1-02
+      - 🇳🇱 NL-nl-1-03
+      - 🇳🇱 NL-nl-1-04
+      - 🇳🇱 NL-nl-1-05
+      - 🇳🇱 NL-nl-1-06
+      - 🇳🇱 NL-nl-1-07
+      - 🇳🇱 NL-nl-1-08
+      - 🇳🇱 NL-nl-1-09
+      - 🇳🇱 NL-nl-1-10
+      - 🇫🇷 FR-fr-1-02
+      - 🇫🇷 FR-fr-1-03
+      - 🇫🇷 FR-fr-1-05
+      - 🇫🇷 FR-fr-1-06
+      - 🇫🇷 FR-fr-1-07
+      - 🇫🇷 FR-fr-1-08
+      - 🇫🇷 FR-fr-1-09
+      - 🇫🇷 FR-fr-1-10
+      - 🇫🇷 FR-fr-1-11
+      - 🇪🇸 ES-es-1-02
+      - 🇪🇸 ES-es-1-03
+      - 🇪🇸 ES-es-1-05
+      - 🇪🇸 ES-es-1-06
+      - 🇪🇸 ES-es-1-07
+      - 🇪🇸 ES-es-1-08
+      - 🇪🇸 ES-es-1-09
+      - 🇪🇸 ES-es-1-10
+      - 🇪🇸 ES-es-1-11
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - tg频道:@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港1|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇨🇳 台湾1|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇯🇵 日本1|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡1|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 JP1|@ripaojiedian
+      - 🇯🇵 JP2|@ripaojiedian
+      - 🇯🇵 JP3|@ripaojiedian
+      - 🇯🇵 JP4|@ripaojiedian
+      - 🇯🇵 JP5|@ripaojiedian
+      - 🇯🇵 JP6|@ripaojiedian
+      - 🇯🇵 JP7|@ripaojiedian
+      - 🇯🇵 JP8|@ripaojiedian
+      - 🇭🇰 HK1|@ripaojiedian
+      - 🇭🇰 HK2|@ripaojiedian
+      - 🇭🇰 HK3|@ripaojiedian
+      - 🇸🇬 SG1|@ripaojiedian
+      - 🇸🇬 SG2|@ripaojiedian
+      - 🇸🇬 SG3|@ripaojiedian
+      - 🇸🇬 SG4|@ripaojiedian
+      - 🇸🇬 SG5|@ripaojiedian
+      - 🇸🇬 SG6|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian
+      - 🇸🇬 SG8|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian 2
+      - 🇸🇬 SG10|@ripaojiedian
+      - 🇺🇸 US1|@ripaojiedian
+      - 🇺🇸 US2|@ripaojiedian
+      - 🇺🇸 US4|@ripaojiedian
+      - 🇺🇸 US5|@ripaojiedian
+      - 🇺🇸 US3|@ripaojiedian
+      - 🇺🇸 US6|@ripaojiedian
+      - 🇨🇦 CA1|@ripaojiedian
+      - 🇨🇦 CA2|@ripaojiedian
+      - 🇨🇦 CA3|@ripaojiedian
+      - 🇨🇦 CA-ca-1-06
+      - 🇨🇦 CA-ca-1-07
+      - 🇨🇦 CA-ca-1-08
+      - 🇨🇦 CA-ca-1-09
+      - 🇨🇦 CA-ca-1-10
+      - 🇨🇦 CA-ca-1-11
+      - 🇩🇪 DE-de-1-02
+      - 🇩🇪 DE-de-1-03
+      - 🇩🇪 DE-de-1-05
+      - 🇩🇪 DE-de-1-06
+      - 🇩🇪 DE-de-1-07
+      - 🇩🇪 DE-de-1-08
+      - 🇩🇪 DE-de-1-09
+      - 🇩🇪 DE-de-1-10
+      - 🇩🇪 DE-de-1-11
+      - 🇳🇱 NL-nl-1-01
+      - 🇳🇱 NL-nl-1-02
+      - 🇳🇱 NL-nl-1-03
+      - 🇳🇱 NL-nl-1-04
+      - 🇳🇱 NL-nl-1-05
+      - 🇳🇱 NL-nl-1-06
+      - 🇳🇱 NL-nl-1-07
+      - 🇳🇱 NL-nl-1-08
+      - 🇳🇱 NL-nl-1-09
+      - 🇳🇱 NL-nl-1-10
+      - 🇫🇷 FR-fr-1-02
+      - 🇫🇷 FR-fr-1-03
+      - 🇫🇷 FR-fr-1-05
+      - 🇫🇷 FR-fr-1-06
+      - 🇫🇷 FR-fr-1-07
+      - 🇫🇷 FR-fr-1-08
+      - 🇫🇷 FR-fr-1-09
+      - 🇫🇷 FR-fr-1-10
+      - 🇫🇷 FR-fr-1-11
+      - 🇪🇸 ES-es-1-02
+      - 🇪🇸 ES-es-1-03
+      - 🇪🇸 ES-es-1-05
+      - 🇪🇸 ES-es-1-06
+      - 🇪🇸 ES-es-1-07
+      - 🇪🇸 ES-es-1-08
+      - 🇪🇸 ES-es-1-09
+      - 🇪🇸 ES-es-1-10
+      - 🇪🇸 ES-es-1-11
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - tg频道:@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港1|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇨🇳 台湾1|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇯🇵 日本1|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡1|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 JP1|@ripaojiedian
+      - 🇯🇵 JP2|@ripaojiedian
+      - 🇯🇵 JP3|@ripaojiedian
+      - 🇯🇵 JP4|@ripaojiedian
+      - 🇯🇵 JP5|@ripaojiedian
+      - 🇯🇵 JP6|@ripaojiedian
+      - 🇯🇵 JP7|@ripaojiedian
+      - 🇯🇵 JP8|@ripaojiedian
+      - 🇭🇰 HK1|@ripaojiedian
+      - 🇭🇰 HK2|@ripaojiedian
+      - 🇭🇰 HK3|@ripaojiedian
+      - 🇸🇬 SG1|@ripaojiedian
+      - 🇸🇬 SG2|@ripaojiedian
+      - 🇸🇬 SG3|@ripaojiedian
+      - 🇸🇬 SG4|@ripaojiedian
+      - 🇸🇬 SG5|@ripaojiedian
+      - 🇸🇬 SG6|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian
+      - 🇸🇬 SG8|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian 2
+      - 🇸🇬 SG10|@ripaojiedian
+      - 🇺🇸 US1|@ripaojiedian
+      - 🇺🇸 US2|@ripaojiedian
+      - 🇺🇸 US4|@ripaojiedian
+      - 🇺🇸 US5|@ripaojiedian
+      - 🇺🇸 US3|@ripaojiedian
+      - 🇺🇸 US6|@ripaojiedian
+      - 🇨🇦 CA1|@ripaojiedian
+      - 🇨🇦 CA2|@ripaojiedian
+      - 🇨🇦 CA3|@ripaojiedian
+      - 🇨🇦 CA-ca-1-06
+      - 🇨🇦 CA-ca-1-07
+      - 🇨🇦 CA-ca-1-08
+      - 🇨🇦 CA-ca-1-09
+      - 🇨🇦 CA-ca-1-10
+      - 🇨🇦 CA-ca-1-11
+      - 🇩🇪 DE-de-1-02
+      - 🇩🇪 DE-de-1-03
+      - 🇩🇪 DE-de-1-05
+      - 🇩🇪 DE-de-1-06
+      - 🇩🇪 DE-de-1-07
+      - 🇩🇪 DE-de-1-08
+      - 🇩🇪 DE-de-1-09
+      - 🇩🇪 DE-de-1-10
+      - 🇩🇪 DE-de-1-11
+      - 🇳🇱 NL-nl-1-01
+      - 🇳🇱 NL-nl-1-02
+      - 🇳🇱 NL-nl-1-03
+      - 🇳🇱 NL-nl-1-04
+      - 🇳🇱 NL-nl-1-05
+      - 🇳🇱 NL-nl-1-06
+      - 🇳🇱 NL-nl-1-07
+      - 🇳🇱 NL-nl-1-08
+      - 🇳🇱 NL-nl-1-09
+      - 🇳🇱 NL-nl-1-10
+      - 🇫🇷 FR-fr-1-02
+      - 🇫🇷 FR-fr-1-03
+      - 🇫🇷 FR-fr-1-05
+      - 🇫🇷 FR-fr-1-06
+      - 🇫🇷 FR-fr-1-07
+      - 🇫🇷 FR-fr-1-08
+      - 🇫🇷 FR-fr-1-09
+      - 🇫🇷 FR-fr-1-10
+      - 🇫🇷 FR-fr-1-11
+      - 🇪🇸 ES-es-1-02
+      - 🇪🇸 ES-es-1-03
+      - 🇪🇸 ES-es-1-05
+      - 🇪🇸 ES-es-1-06
+      - 🇪🇸 ES-es-1-07
+      - 🇪🇸 ES-es-1-08
+      - 🇪🇸 ES-es-1-09
+      - 🇪🇸 ES-es-1-10
+      - 🇪🇸 ES-es-1-11
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - tg频道:@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港1|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇨🇳 台湾1|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇯🇵 日本1|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡1|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 JP1|@ripaojiedian
+      - 🇯🇵 JP2|@ripaojiedian
+      - 🇯🇵 JP3|@ripaojiedian
+      - 🇯🇵 JP4|@ripaojiedian
+      - 🇯🇵 JP5|@ripaojiedian
+      - 🇯🇵 JP6|@ripaojiedian
+      - 🇯🇵 JP7|@ripaojiedian
+      - 🇯🇵 JP8|@ripaojiedian
+      - 🇭🇰 HK1|@ripaojiedian
+      - 🇭🇰 HK2|@ripaojiedian
+      - 🇭🇰 HK3|@ripaojiedian
+      - 🇸🇬 SG1|@ripaojiedian
+      - 🇸🇬 SG2|@ripaojiedian
+      - 🇸🇬 SG3|@ripaojiedian
+      - 🇸🇬 SG4|@ripaojiedian
+      - 🇸🇬 SG5|@ripaojiedian
+      - 🇸🇬 SG6|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian
+      - 🇸🇬 SG8|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian 2
+      - 🇸🇬 SG10|@ripaojiedian
+      - 🇺🇸 US1|@ripaojiedian
+      - 🇺🇸 US2|@ripaojiedian
+      - 🇺🇸 US4|@ripaojiedian
+      - 🇺🇸 US5|@ripaojiedian
+      - 🇺🇸 US3|@ripaojiedian
+      - 🇺🇸 US6|@ripaojiedian
+      - 🇨🇦 CA1|@ripaojiedian
+      - 🇨🇦 CA2|@ripaojiedian
+      - 🇨🇦 CA3|@ripaojiedian
+      - 🇨🇦 CA-ca-1-06
+      - 🇨🇦 CA-ca-1-07
+      - 🇨🇦 CA-ca-1-08
+      - 🇨🇦 CA-ca-1-09
+      - 🇨🇦 CA-ca-1-10
+      - 🇨🇦 CA-ca-1-11
+      - 🇩🇪 DE-de-1-02
+      - 🇩🇪 DE-de-1-03
+      - 🇩🇪 DE-de-1-05
+      - 🇩🇪 DE-de-1-06
+      - 🇩🇪 DE-de-1-07
+      - 🇩🇪 DE-de-1-08
+      - 🇩🇪 DE-de-1-09
+      - 🇩🇪 DE-de-1-10
+      - 🇩🇪 DE-de-1-11
+      - 🇳🇱 NL-nl-1-01
+      - 🇳🇱 NL-nl-1-02
+      - 🇳🇱 NL-nl-1-03
+      - 🇳🇱 NL-nl-1-04
+      - 🇳🇱 NL-nl-1-05
+      - 🇳🇱 NL-nl-1-06
+      - 🇳🇱 NL-nl-1-07
+      - 🇳🇱 NL-nl-1-08
+      - 🇳🇱 NL-nl-1-09
+      - 🇳🇱 NL-nl-1-10
+      - 🇫🇷 FR-fr-1-02
+      - 🇫🇷 FR-fr-1-03
+      - 🇫🇷 FR-fr-1-05
+      - 🇫🇷 FR-fr-1-06
+      - 🇫🇷 FR-fr-1-07
+      - 🇫🇷 FR-fr-1-08
+      - 🇫🇷 FR-fr-1-09
+      - 🇫🇷 FR-fr-1-10
+      - 🇫🇷 FR-fr-1-11
+      - 🇪🇸 ES-es-1-02
+      - 🇪🇸 ES-es-1-03
+      - 🇪🇸 ES-es-1-05
+      - 🇪🇸 ES-es-1-06
+      - 🇪🇸 ES-es-1-07
+      - 🇪🇸 ES-es-1-08
+      - 🇪🇸 ES-es-1-09
+      - 🇪🇸 ES-es-1-10
+      - 🇪🇸 ES-es-1-11
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - tg频道:@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港1|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇨🇳 台湾1|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇯🇵 日本1|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡1|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 JP1|@ripaojiedian
+      - 🇯🇵 JP2|@ripaojiedian
+      - 🇯🇵 JP3|@ripaojiedian
+      - 🇯🇵 JP4|@ripaojiedian
+      - 🇯🇵 JP5|@ripaojiedian
+      - 🇯🇵 JP6|@ripaojiedian
+      - 🇯🇵 JP7|@ripaojiedian
+      - 🇯🇵 JP8|@ripaojiedian
+      - 🇭🇰 HK1|@ripaojiedian
+      - 🇭🇰 HK2|@ripaojiedian
+      - 🇭🇰 HK3|@ripaojiedian
+      - 🇸🇬 SG1|@ripaojiedian
+      - 🇸🇬 SG2|@ripaojiedian
+      - 🇸🇬 SG3|@ripaojiedian
+      - 🇸🇬 SG4|@ripaojiedian
+      - 🇸🇬 SG5|@ripaojiedian
+      - 🇸🇬 SG6|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian
+      - 🇸🇬 SG8|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian 2
+      - 🇸🇬 SG10|@ripaojiedian
+      - 🇺🇸 US1|@ripaojiedian
+      - 🇺🇸 US2|@ripaojiedian
+      - 🇺🇸 US4|@ripaojiedian
+      - 🇺🇸 US5|@ripaojiedian
+      - 🇺🇸 US3|@ripaojiedian
+      - 🇺🇸 US6|@ripaojiedian
+      - 🇨🇦 CA1|@ripaojiedian
+      - 🇨🇦 CA2|@ripaojiedian
+      - 🇨🇦 CA3|@ripaojiedian
+      - 🇨🇦 CA-ca-1-06
+      - 🇨🇦 CA-ca-1-07
+      - 🇨🇦 CA-ca-1-08
+      - 🇨🇦 CA-ca-1-09
+      - 🇨🇦 CA-ca-1-10
+      - 🇨🇦 CA-ca-1-11
+      - 🇩🇪 DE-de-1-02
+      - 🇩🇪 DE-de-1-03
+      - 🇩🇪 DE-de-1-05
+      - 🇩🇪 DE-de-1-06
+      - 🇩🇪 DE-de-1-07
+      - 🇩🇪 DE-de-1-08
+      - 🇩🇪 DE-de-1-09
+      - 🇩🇪 DE-de-1-10
+      - 🇩🇪 DE-de-1-11
+      - 🇳🇱 NL-nl-1-01
+      - 🇳🇱 NL-nl-1-02
+      - 🇳🇱 NL-nl-1-03
+      - 🇳🇱 NL-nl-1-04
+      - 🇳🇱 NL-nl-1-05
+      - 🇳🇱 NL-nl-1-06
+      - 🇳🇱 NL-nl-1-07
+      - 🇳🇱 NL-nl-1-08
+      - 🇳🇱 NL-nl-1-09
+      - 🇳🇱 NL-nl-1-10
+      - 🇫🇷 FR-fr-1-02
+      - 🇫🇷 FR-fr-1-03
+      - 🇫🇷 FR-fr-1-05
+      - 🇫🇷 FR-fr-1-06
+      - 🇫🇷 FR-fr-1-07
+      - 🇫🇷 FR-fr-1-08
+      - 🇫🇷 FR-fr-1-09
+      - 🇫🇷 FR-fr-1-10
+      - 🇫🇷 FR-fr-1-11
+      - 🇪🇸 ES-es-1-02
+      - 🇪🇸 ES-es-1-03
+      - 🇪🇸 ES-es-1-05
+      - 🇪🇸 ES-es-1-06
+      - 🇪🇸 ES-es-1-07
+      - 🇪🇸 ES-es-1-08
+      - 🇪🇸 ES-es-1-09
+      - 🇪🇸 ES-es-1-10
+      - 🇪🇸 ES-es-1-11
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - tg频道:@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港1|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇨🇳 台湾1|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇯🇵 日本1|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡1|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 JP1|@ripaojiedian
+      - 🇯🇵 JP2|@ripaojiedian
+      - 🇯🇵 JP3|@ripaojiedian
+      - 🇯🇵 JP4|@ripaojiedian
+      - 🇯🇵 JP5|@ripaojiedian
+      - 🇯🇵 JP6|@ripaojiedian
+      - 🇯🇵 JP7|@ripaojiedian
+      - 🇯🇵 JP8|@ripaojiedian
+      - 🇭🇰 HK1|@ripaojiedian
+      - 🇭🇰 HK2|@ripaojiedian
+      - 🇭🇰 HK3|@ripaojiedian
+      - 🇸🇬 SG1|@ripaojiedian
+      - 🇸🇬 SG2|@ripaojiedian
+      - 🇸🇬 SG3|@ripaojiedian
+      - 🇸🇬 SG4|@ripaojiedian
+      - 🇸🇬 SG5|@ripaojiedian
+      - 🇸🇬 SG6|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian
+      - 🇸🇬 SG8|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian 2
+      - 🇸🇬 SG10|@ripaojiedian
+      - 🇺🇸 US1|@ripaojiedian
+      - 🇺🇸 US2|@ripaojiedian
+      - 🇺🇸 US4|@ripaojiedian
+      - 🇺🇸 US5|@ripaojiedian
+      - 🇺🇸 US3|@ripaojiedian
+      - 🇺🇸 US6|@ripaojiedian
+      - 🇨🇦 CA1|@ripaojiedian
+      - 🇨🇦 CA2|@ripaojiedian
+      - 🇨🇦 CA3|@ripaojiedian
+      - 🇨🇦 CA-ca-1-06
+      - 🇨🇦 CA-ca-1-07
+      - 🇨🇦 CA-ca-1-08
+      - 🇨🇦 CA-ca-1-09
+      - 🇨🇦 CA-ca-1-10
+      - 🇨🇦 CA-ca-1-11
+      - 🇩🇪 DE-de-1-02
+      - 🇩🇪 DE-de-1-03
+      - 🇩🇪 DE-de-1-05
+      - 🇩🇪 DE-de-1-06
+      - 🇩🇪 DE-de-1-07
+      - 🇩🇪 DE-de-1-08
+      - 🇩🇪 DE-de-1-09
+      - 🇩🇪 DE-de-1-10
+      - 🇩🇪 DE-de-1-11
+      - 🇳🇱 NL-nl-1-01
+      - 🇳🇱 NL-nl-1-02
+      - 🇳🇱 NL-nl-1-03
+      - 🇳🇱 NL-nl-1-04
+      - 🇳🇱 NL-nl-1-05
+      - 🇳🇱 NL-nl-1-06
+      - 🇳🇱 NL-nl-1-07
+      - 🇳🇱 NL-nl-1-08
+      - 🇳🇱 NL-nl-1-09
+      - 🇳🇱 NL-nl-1-10
+      - 🇫🇷 FR-fr-1-02
+      - 🇫🇷 FR-fr-1-03
+      - 🇫🇷 FR-fr-1-05
+      - 🇫🇷 FR-fr-1-06
+      - 🇫🇷 FR-fr-1-07
+      - 🇫🇷 FR-fr-1-08
+      - 🇫🇷 FR-fr-1-09
+      - 🇫🇷 FR-fr-1-10
+      - 🇫🇷 FR-fr-1-11
+      - 🇪🇸 ES-es-1-02
+      - 🇪🇸 ES-es-1-03
+      - 🇪🇸 ES-es-1-05
+      - 🇪🇸 ES-es-1-06
+      - 🇪🇸 ES-es-1-07
+      - 🇪🇸 ES-es-1-08
+      - 🇪🇸 ES-es-1-09
+      - 🇪🇸 ES-es-1-10
+      - 🇪🇸 ES-es-1-11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -262,25 +696,79 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - tg频道:@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港1|@ripaojiedian
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇨🇳 台湾1|@ripaojiedian
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇯🇵 日本1|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇸🇬 新加坡1|@ripaojiedian
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇰🇷 韩国1|@ripaojiedian
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国1|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 JP1|@ripaojiedian
+      - 🇯🇵 JP2|@ripaojiedian
+      - 🇯🇵 JP3|@ripaojiedian
+      - 🇯🇵 JP4|@ripaojiedian
+      - 🇯🇵 JP5|@ripaojiedian
+      - 🇯🇵 JP6|@ripaojiedian
+      - 🇯🇵 JP7|@ripaojiedian
+      - 🇯🇵 JP8|@ripaojiedian
+      - 🇭🇰 HK1|@ripaojiedian
+      - 🇭🇰 HK2|@ripaojiedian
+      - 🇭🇰 HK3|@ripaojiedian
+      - 🇸🇬 SG1|@ripaojiedian
+      - 🇸🇬 SG2|@ripaojiedian
+      - 🇸🇬 SG3|@ripaojiedian
+      - 🇸🇬 SG4|@ripaojiedian
+      - 🇸🇬 SG5|@ripaojiedian
+      - 🇸🇬 SG6|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian
+      - 🇸🇬 SG8|@ripaojiedian
+      - 🇸🇬 SG9|@ripaojiedian 2
+      - 🇸🇬 SG10|@ripaojiedian
+      - 🇺🇸 US1|@ripaojiedian
+      - 🇺🇸 US2|@ripaojiedian
+      - 🇺🇸 US4|@ripaojiedian
+      - 🇺🇸 US5|@ripaojiedian
+      - 🇺🇸 US3|@ripaojiedian
+      - 🇺🇸 US6|@ripaojiedian
+      - 🇨🇦 CA1|@ripaojiedian
+      - 🇨🇦 CA2|@ripaojiedian
+      - 🇨🇦 CA3|@ripaojiedian
+      - 🇨🇦 CA-ca-1-06
+      - 🇨🇦 CA-ca-1-07
+      - 🇨🇦 CA-ca-1-08
+      - 🇨🇦 CA-ca-1-09
+      - 🇨🇦 CA-ca-1-10
+      - 🇨🇦 CA-ca-1-11
+      - 🇩🇪 DE-de-1-02
+      - 🇩🇪 DE-de-1-03
+      - 🇩🇪 DE-de-1-05
+      - 🇩🇪 DE-de-1-06
+      - 🇩🇪 DE-de-1-07
+      - 🇩🇪 DE-de-1-08
+      - 🇩🇪 DE-de-1-09
+      - 🇩🇪 DE-de-1-10
+      - 🇩🇪 DE-de-1-11
+      - 🇳🇱 NL-nl-1-01
+      - 🇳🇱 NL-nl-1-02
+      - 🇳🇱 NL-nl-1-03
+      - 🇳🇱 NL-nl-1-04
+      - 🇳🇱 NL-nl-1-05
+      - 🇳🇱 NL-nl-1-06
+      - 🇳🇱 NL-nl-1-07
+      - 🇳🇱 NL-nl-1-08
+      - 🇳🇱 NL-nl-1-09
+      - 🇳🇱 NL-nl-1-10
+      - 🇫🇷 FR-fr-1-02
+      - 🇫🇷 FR-fr-1-03
+      - 🇫🇷 FR-fr-1-05
+      - 🇫🇷 FR-fr-1-06
+      - 🇫🇷 FR-fr-1-07
+      - 🇫🇷 FR-fr-1-08
+      - 🇫🇷 FR-fr-1-09
+      - 🇫🇷 FR-fr-1-10
+      - 🇫🇷 FR-fr-1-11
+      - 🇪🇸 ES-es-1-02
+      - 🇪🇸 ES-es-1-03
+      - 🇪🇸 ES-es-1-05
+      - 🇪🇸 ES-es-1-06
+      - 🇪🇸 ES-es-1-07
+      - 🇪🇸 ES-es-1-08
+      - 🇪🇸 ES-es-1-09
+      - 🇪🇸 ES-es-1-10
+      - 🇪🇸 ES-es-1-11
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
