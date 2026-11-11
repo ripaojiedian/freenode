@@ -51,205 +51,205 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - {name: 🇹🇼 台湾｜02｜HiNet, server: tw.ccwink.cc, port: 6549, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, udp: true, sni: baidu.com, skip-cert-verify: true}
-  - {name: 🇹🇼 台湾｜06｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, tls: true, tfo: false, skip-cert-verify: true, servername: tw01.564895.xyz, client-fingerprint: firefox, network: ws, ws-opts: {path: /asdasd, headers: {Host: tw01.564895.xyz}}, udp: true}
-  - {name: 🇯🇵 日本｜08｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, tls: true, tfo: false, skip-cert-verify: true, servername: jp01.564895.xyz, client-fingerprint: firefox, network: ws, ws-opts: {path: /asdasd, headers: {Host: jp01.564895.xyz}}, udp: true}
-  - {name: 🇸🇬 新加坡｜07｜BGP, server: cf01.564895.xyz, port: 2053, type: vless, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, tls: true, tfo: false, skip-cert-verify: true, servername: sg01.564895.xyz, client-fingerprint: firefox, network: ws, ws-opts: {path: /asdasd, headers: {Host: sg01.564895.xyz}}, udp: true}
-  - {name: 🇸🇬 新加坡｜08｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, tls: true, tfo: false, skip-cert-verify: true, servername: sg01.564895.xyz, client-fingerprint: firefox, network: ws, ws-opts: {path: /asdasd, headers: {Host: sg01.564895.xyz}}, udp: true}
-  - {name: 🇩🇪 德国｜06｜BGP, server: cf01.564895.xyz, port: 2053, type: vless, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, tls: true, tfo: false, skip-cert-verify: true, servername: de01.564895.xyz, client-fingerprint: firefox, network: ws, ws-opts: {path: /asdasd, headers: {Host: de01.564895.xyz}}, udp: true}
-  - {name: 🇩🇪 德国｜07｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, tls: true, tfo: false, skip-cert-verify: true, servername: de01.564895.xyz, client-fingerprint: firefox, network: ws, ws-opts: {path: /asdasd, headers: {Host: de01.564895.xyz}}, udp: true}
-  - {name: tg频道:@ripaojiedian, server: cf.danfeng.eu.org, port: 8443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇭🇰 HK1@ripaojiedian, server: 218.102.64.147, port: 11310, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇭🇰 HK2@ripaojiedian, server: 218.102.64.147, port: 9383, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇭🇰 HK3@ripaojiedian, server: 45.221.114.46, port: 12611, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇯🇵 JP1@ripaojiedian, server: 104.194.83.133, port: 5002, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇯🇵 JP2@ripaojiedian, server: 45.196.233.54, port: 18549, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇰🇷 KR1@ripaojiedian, server: 109.61.127.247, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇰🇷 KR2@ripaojiedian, server: 121.154.67.134, port: 28017, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇸🇬 SG1@ripaojiedian, server: 206.54.46.225, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇸🇬 SG2@ripaojiedian, server: 206.54.46.241, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇹🇼 TW@ripaojiedian, server: 45.207.159.60, port: 53725, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 US1@ripaojiedian, server: 156.225.64.8, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 US2@ripaojiedian, server: 154.17.9.239, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, alpn: [http/1.1], tfo: false, skip-cert-verify: true, servername: speedtest.danfengno1.kdns.fr, client-fingerprint: firefox, network: ws, ws-opts: {path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st, headers: {Host: speedtest.danfengno1.kdns.fr}}, udp: true}
+  - {name: 🇮🇹 意大利|@ripaojiedian, server: 202.50.253.63, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
+  - {name: 🇮🇹 意大利2|@ripaojiedian, server: 202.50.253.27, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
+  - {name: 🇯🇵 日本|@ripaojiedian, server: 50.7.44.27, port: 443, type: vless, uuid: 76825bbe-3ad2-4156-b9ed-a5bdfcc93bd3, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 日本2|@ripaojiedian, server: 50.7.44.27, port: 2053, type: vless, uuid: 76825bbe-3ad2-4156-b9ed-a5bdfcc93bd3, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 日本3|@ripaojiedian, server: 50.7.44.27, port: 2083, type: vless, uuid: 76825bbe-3ad2-4156-b9ed-a5bdfcc93bd3, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk, short-id: "bb472a184677af64"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 日本4|@ripaojiedian, server: cdn-jp.skyvora.app, port: 8443, type: vless, uuid: 76825bbe-3ad2-4156-b9ed-a5bdfcc93bd3, tls: true, tfo: false, skip-cert-verify: true, servername: cdn-jp.skyvora.app, client-fingerprint: chrome, network: ws, ws-opts: {path: /pmcxbjzdau6, headers: {Host: cdn-jp.skyvora.app}}, udp: true}
+  - {name: 🇭🇰 香港|@ripaojiedian, server: 66.90.115.123, port: 2083, type: vless, uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k, short-id: "08a4b1f473932632"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港2|@ripaojiedian, server: 66.90.115.133, port: 2053, type: vless, uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k, short-id: "08a4b1f473932632"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港3|@ripaojiedian, server: 66.90.115.133, port: 2083, type: vless, uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k, short-id: "08a4b1f473932632"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港4|@ripaojiedian, server: cdn-hk.skyvora.app, port: 8443, type: vless, uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40, tls: true, tfo: false, skip-cert-verify: true, servername: cdn-hk.skyvora.app, client-fingerprint: chrome, network: ws, ws-opts: {path: /zmeadqv620k, headers: {Host: cdn-hk.skyvora.app}}, udp: true}
+  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 67.159.49.30, port: 443, type: vless, uuid: 3eb38d44-2e61-4553-b6ae-026033eacba5, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 67.159.49.26, port: 2053, type: vless, uuid: 3eb38d44-2e61-4553-b6ae-026033eacba5, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 67.159.49.27, port: 2053, type: vless, uuid: 3eb38d44-2e61-4553-b6ae-026033eacba5, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34, short-id: "deccc6fac1ddb0ff"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡4|@ripaojiedian, server: cdn-sg.skyvora.app, port: 8443, type: vless, uuid: 3eb38d44-2e61-4553-b6ae-026033eacba5, tls: true, tfo: false, skip-cert-verify: true, servername: cdn-sg.skyvora.app, client-fingerprint: chrome, network: ws, ws-opts: {path: /axzfrv47qcn, headers: {Host: cdn-sg.skyvora.app}}, udp: true}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 38.145.220.39, port: 443, type: vless, uuid: 71d6fdb8-eda2-4aa8-b3e2-34a3aad51382, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo, short-id: "66d62ef550107695"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国2|@ripaojiedian, server: 188.164.248.110, port: 443, type: vless, uuid: 13134515-adc7-404b-8d2a-f9ad99e8dcbd, tls: true, tfo: false, skip-cert-verify: true, servername: imanvipreserved.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: imanvipreserved.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国3|@ripaojiedian, server: 38.145.220.39, port: 2053, type: vless, uuid: 71d6fdb8-eda2-4aa8-b3e2-34a3aad51382, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo, short-id: "66d62ef550107695"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国4|@ripaojiedian, server: cdn-us.skyvora.app, port: 8443, type: vless, uuid: 71d6fdb8-eda2-4aa8-b3e2-34a3aad51382, tls: true, tfo: false, skip-cert-verify: true, servername: cdn-us.skyvora.app, client-fingerprint: chrome, network: ws, ws-opts: {path: /kqdyeo2k4b1, headers: {Host: cdn-us.skyvora.app}}, udp: true}
+  - {name: 🇩🇪 德国|@ripaojiedian, server: 50.7.86.203, port: 2053, type: vless, uuid: 746c7209-49e1-494e-9ad1-a630d48ed26d, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国2|@ripaojiedian, server: 50.7.86.214, port: 2053, type: vless, uuid: 746c7209-49e1-494e-9ad1-a630d48ed26d, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs, short-id: "55986a94e2228791"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇹🇼 台湾｜02｜HiNet
-      - 🇹🇼 台湾｜06｜BGP
-      - 🇯🇵 日本｜08｜BGP
-      - 🇸🇬 新加坡｜07｜BGP
-      - 🇸🇬 新加坡｜08｜BGP
-      - 🇩🇪 德国｜06｜BGP
-      - 🇩🇪 德国｜07｜BGP
-      - tg频道:@ripaojiedian
-      - 🇭🇰 HK1@ripaojiedian
-      - 🇭🇰 HK2@ripaojiedian
-      - 🇭🇰 HK3@ripaojiedian
-      - 🇯🇵 JP1@ripaojiedian
-      - 🇯🇵 JP2@ripaojiedian
-      - 🇰🇷 KR1@ripaojiedian
-      - 🇰🇷 KR2@ripaojiedian
-      - 🇸🇬 SG1@ripaojiedian
-      - 🇸🇬 SG2@ripaojiedian
-      - 🇹🇼 TW@ripaojiedian
-      - 🇺🇸 US1@ripaojiedian
-      - 🇺🇸 US2@ripaojiedian
+      - 🇮🇹 意大利|@ripaojiedian
+      - 🇮🇹 意大利2|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡4|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇩🇪 德国2|@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇹🇼 台湾｜02｜HiNet
-      - 🇹🇼 台湾｜06｜BGP
-      - 🇯🇵 日本｜08｜BGP
-      - 🇸🇬 新加坡｜07｜BGP
-      - 🇸🇬 新加坡｜08｜BGP
-      - 🇩🇪 德国｜06｜BGP
-      - 🇩🇪 德国｜07｜BGP
-      - tg频道:@ripaojiedian
-      - 🇭🇰 HK1@ripaojiedian
-      - 🇭🇰 HK2@ripaojiedian
-      - 🇭🇰 HK3@ripaojiedian
-      - 🇯🇵 JP1@ripaojiedian
-      - 🇯🇵 JP2@ripaojiedian
-      - 🇰🇷 KR1@ripaojiedian
-      - 🇰🇷 KR2@ripaojiedian
-      - 🇸🇬 SG1@ripaojiedian
-      - 🇸🇬 SG2@ripaojiedian
-      - 🇹🇼 TW@ripaojiedian
-      - 🇺🇸 US1@ripaojiedian
-      - 🇺🇸 US2@ripaojiedian
+      - 🇮🇹 意大利|@ripaojiedian
+      - 🇮🇹 意大利2|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡4|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇩🇪 德国2|@ripaojiedian
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼 台湾｜02｜HiNet
-      - 🇹🇼 台湾｜06｜BGP
-      - 🇯🇵 日本｜08｜BGP
-      - 🇸🇬 新加坡｜07｜BGP
-      - 🇸🇬 新加坡｜08｜BGP
-      - 🇩🇪 德国｜06｜BGP
-      - 🇩🇪 德国｜07｜BGP
-      - tg频道:@ripaojiedian
-      - 🇭🇰 HK1@ripaojiedian
-      - 🇭🇰 HK2@ripaojiedian
-      - 🇭🇰 HK3@ripaojiedian
-      - 🇯🇵 JP1@ripaojiedian
-      - 🇯🇵 JP2@ripaojiedian
-      - 🇰🇷 KR1@ripaojiedian
-      - 🇰🇷 KR2@ripaojiedian
-      - 🇸🇬 SG1@ripaojiedian
-      - 🇸🇬 SG2@ripaojiedian
-      - 🇹🇼 TW@ripaojiedian
-      - 🇺🇸 US1@ripaojiedian
-      - 🇺🇸 US2@ripaojiedian
+      - 🇮🇹 意大利|@ripaojiedian
+      - 🇮🇹 意大利2|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡4|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇩🇪 德国2|@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼 台湾｜02｜HiNet
-      - 🇹🇼 台湾｜06｜BGP
-      - 🇯🇵 日本｜08｜BGP
-      - 🇸🇬 新加坡｜07｜BGP
-      - 🇸🇬 新加坡｜08｜BGP
-      - 🇩🇪 德国｜06｜BGP
-      - 🇩🇪 德国｜07｜BGP
-      - tg频道:@ripaojiedian
-      - 🇭🇰 HK1@ripaojiedian
-      - 🇭🇰 HK2@ripaojiedian
-      - 🇭🇰 HK3@ripaojiedian
-      - 🇯🇵 JP1@ripaojiedian
-      - 🇯🇵 JP2@ripaojiedian
-      - 🇰🇷 KR1@ripaojiedian
-      - 🇰🇷 KR2@ripaojiedian
-      - 🇸🇬 SG1@ripaojiedian
-      - 🇸🇬 SG2@ripaojiedian
-      - 🇹🇼 TW@ripaojiedian
-      - 🇺🇸 US1@ripaojiedian
-      - 🇺🇸 US2@ripaojiedian
+      - 🇮🇹 意大利|@ripaojiedian
+      - 🇮🇹 意大利2|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡4|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇩🇪 德国2|@ripaojiedian
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇹🇼 台湾｜02｜HiNet
-      - 🇹🇼 台湾｜06｜BGP
-      - 🇯🇵 日本｜08｜BGP
-      - 🇸🇬 新加坡｜07｜BGP
-      - 🇸🇬 新加坡｜08｜BGP
-      - 🇩🇪 德国｜06｜BGP
-      - 🇩🇪 德国｜07｜BGP
-      - tg频道:@ripaojiedian
-      - 🇭🇰 HK1@ripaojiedian
-      - 🇭🇰 HK2@ripaojiedian
-      - 🇭🇰 HK3@ripaojiedian
-      - 🇯🇵 JP1@ripaojiedian
-      - 🇯🇵 JP2@ripaojiedian
-      - 🇰🇷 KR1@ripaojiedian
-      - 🇰🇷 KR2@ripaojiedian
-      - 🇸🇬 SG1@ripaojiedian
-      - 🇸🇬 SG2@ripaojiedian
-      - 🇹🇼 TW@ripaojiedian
-      - 🇺🇸 US1@ripaojiedian
-      - 🇺🇸 US2@ripaojiedian
+      - 🇮🇹 意大利|@ripaojiedian
+      - 🇮🇹 意大利2|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡4|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇩🇪 德国2|@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼 台湾｜02｜HiNet
-      - 🇹🇼 台湾｜06｜BGP
-      - 🇯🇵 日本｜08｜BGP
-      - 🇸🇬 新加坡｜07｜BGP
-      - 🇸🇬 新加坡｜08｜BGP
-      - 🇩🇪 德国｜06｜BGP
-      - 🇩🇪 德国｜07｜BGP
-      - tg频道:@ripaojiedian
-      - 🇭🇰 HK1@ripaojiedian
-      - 🇭🇰 HK2@ripaojiedian
-      - 🇭🇰 HK3@ripaojiedian
-      - 🇯🇵 JP1@ripaojiedian
-      - 🇯🇵 JP2@ripaojiedian
-      - 🇰🇷 KR1@ripaojiedian
-      - 🇰🇷 KR2@ripaojiedian
-      - 🇸🇬 SG1@ripaojiedian
-      - 🇸🇬 SG2@ripaojiedian
-      - 🇹🇼 TW@ripaojiedian
-      - 🇺🇸 US1@ripaojiedian
-      - 🇺🇸 US2@ripaojiedian
+      - 🇮🇹 意大利|@ripaojiedian
+      - 🇮🇹 意大利2|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡4|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇩🇪 德国2|@ripaojiedian
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼 台湾｜02｜HiNet
-      - 🇹🇼 台湾｜06｜BGP
-      - 🇯🇵 日本｜08｜BGP
-      - 🇸🇬 新加坡｜07｜BGP
-      - 🇸🇬 新加坡｜08｜BGP
-      - 🇩🇪 德国｜06｜BGP
-      - 🇩🇪 德国｜07｜BGP
-      - tg频道:@ripaojiedian
-      - 🇭🇰 HK1@ripaojiedian
-      - 🇭🇰 HK2@ripaojiedian
-      - 🇭🇰 HK3@ripaojiedian
-      - 🇯🇵 JP1@ripaojiedian
-      - 🇯🇵 JP2@ripaojiedian
-      - 🇰🇷 KR1@ripaojiedian
-      - 🇰🇷 KR2@ripaojiedian
-      - 🇸🇬 SG1@ripaojiedian
-      - 🇸🇬 SG2@ripaojiedian
-      - 🇹🇼 TW@ripaojiedian
-      - 🇺🇸 US1@ripaojiedian
-      - 🇺🇸 US2@ripaojiedian
+      - 🇮🇹 意大利|@ripaojiedian
+      - 🇮🇹 意大利2|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡4|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇩🇪 德国2|@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -272,26 +272,26 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼 台湾｜02｜HiNet
-      - 🇹🇼 台湾｜06｜BGP
-      - 🇯🇵 日本｜08｜BGP
-      - 🇸🇬 新加坡｜07｜BGP
-      - 🇸🇬 新加坡｜08｜BGP
-      - 🇩🇪 德国｜06｜BGP
-      - 🇩🇪 德国｜07｜BGP
-      - tg频道:@ripaojiedian
-      - 🇭🇰 HK1@ripaojiedian
-      - 🇭🇰 HK2@ripaojiedian
-      - 🇭🇰 HK3@ripaojiedian
-      - 🇯🇵 JP1@ripaojiedian
-      - 🇯🇵 JP2@ripaojiedian
-      - 🇰🇷 KR1@ripaojiedian
-      - 🇰🇷 KR2@ripaojiedian
-      - 🇸🇬 SG1@ripaojiedian
-      - 🇸🇬 SG2@ripaojiedian
-      - 🇹🇼 TW@ripaojiedian
-      - 🇺🇸 US1@ripaojiedian
-      - 🇺🇸 US2@ripaojiedian
+      - 🇮🇹 意大利|@ripaojiedian
+      - 🇮🇹 意大利2|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇯🇵 日本4|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡4|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇩🇪 德国2|@ripaojiedian
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
