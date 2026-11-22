@@ -53,16 +53,23 @@ dns:
 proxies:
   - {name: 🇮🇹 意大利|@ripaojiedian, server: 202.50.253.63, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
   - {name: 🇮🇹 意大利2|@ripaojiedian, server: 202.50.253.27, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
-  - {name: 🇯🇵 日本|@ripaojiedian, server: 139.162.91.239, port: 443, type: vless, uuid: b0dc852a-97ec-4d4e-9179-f0e5c2ef1489, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: 7PBmAR6CGAh2naIi09rlP_PtmLmqhlXF_toZEdAHmRo, short-id: "7c6d6833"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 🇺🇸 美国|@ripaojiedian, server: 167.82.76.27, port: 443, type: trojan, password: MiTiVPN, sni: ssl.fastly.com, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国|@ripaojiedian, server: edge.bookmai.com, port: 443, type: vless, uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc}, servername: mother-earth.fyi, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 日本2|@ripaojiedian, server: v2jp.k1.ssnss.live, port: 44184, type: trojan, password: d050aca3-9df2-4461-90ec-92373c1d7636, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本3|@ripaojiedian, server: 172.105.216.21, port: 443, type: vless, uuid: 76f1ce49-bcea-4680-b9ef-16592269445b, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: Mjv5qe_CrvfHdVwgtyqYbqPesZ-1oko2XYg3dguzvxg, short-id: "c29f9af4"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 139.162.20.241, port: 443, type: vless, uuid: 7f0270f9-1abc-4c4f-960d-0a23e32f1eb8, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: fG1u2AZj5pgSNWO3MBmkoY6K61xBwnuYX3_z1fSeR0o, short-id: "640c807d"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 🇺🇸 美国2|@ripaojiedian, server: 172.235.53.103, port: 443, type: vless, uuid: 38ae2bc6-577c-4e0a-b49c-81c44a0b4383, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: YS1T3hKkZSWZBej5I1O2s3QQ-jf5JOAY24EZbp9faX8, short-id: "60e39a7e"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 🇺🇸 美国3|@ripaojiedian, server: 172.236.239.126, port: 443, type: vless, uuid: 6b4861de-7316-4a5a-bc45-0cbd8bf97eab, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: SJAHlQal4h4gy7BFInw13ute3ZM49kXMWCkJj3F4tW0, short-id: "357a37e1"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: 🇺🇸 美国4|@ripaojiedian, server: 167.82.76.27, port: 443, type: trojan, password: MiTiVPN, sni: ssl.fastly.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国5|@ripaojiedian, server: 151.101.110.219, port: 443, type: trojan, password: Mitivpn, sni: ssl.fastly.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 139.162.20.241, port: 443, type: vless, uuid: 7f0270f9-1abc-4c4f-960d-0a23e32f1eb8, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: fG1u2AZj5pgSNWO3MBmkoY6K61xBwnuYX3_z1fSeR0o, short-id: "640c807d"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, v2ray-http-upgrade: false}, udp: true}
+  - {name: 🇭🇰 香港|@ripaojiedian, server: 116.213.43.43, port: 11103, type: vless, uuid: bb836d81-d0c5-4f01-a584-806cdf65e36a, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: 5NNdXPMTBLP-xeDKFwcG-j6u-c4DhXIfnlHMqMJZ4n4, short-id: "9564e1a7a1cf8b3a"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港2|@ripaojiedian, server: 116.213.43.43, port: 11107, type: vless, uuid: 08a37d1f-7bf1-4b5d-a2ec-5ced6a633d7f, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: 6GRzkPbs12fKBdBBFzs5dmtmbSHCXMngUCBKLrXYm3U, short-id: "e2ccd8eedcbee2ce"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾|@ripaojiedian, server: 116.213.43.43, port: 11102, type: vless, uuid: 530d31fc-2690-49e4-bfc9-3f991e145008, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0, short-id: "ed571d022f7bc3bf"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港3|@ripaojiedian, server: 47.243.230.253, port: 443, type: vless, uuid: 27c26119-090b-4ae3-80d2-e9f08a575862, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: NNBFlHVb2xbmURjkxXCZfqZNFmd5MprUtg5usEg_LRw, short-id: "58d234c8c6a009bc"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 103.119.15.175, port: 443, type: vless, uuid: 89be587f-0e93-4c67-822e-98ad0a56c29e, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: vQgrNIQTmbTIqtauDixzp2ePvd-aK_zlTctIDRPk3wQ, short-id: "ce90a4459f024897"}, servername: www.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国|@ripaojiedian, server: 189.24.82.30, port: 443, type: vless, uuid: b354463f-ac84-422e-9a26-556c81ba001c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: 77HTpkO_F3cUfA5Trka3eSh8V18atRMLyclGqZ__8C8, short-id: "b73c53b18b65dd90"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国2|@ripaojiedian, server: 116.213.43.43, port: 11105, type: vless, uuid: 31d5b95e-aff2-4ffb-8160-b5ae941b46f6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: ghxoNrFX488_gXprrfDt-03Lkxj3YFqS2q-DDw-m6yE, short-id: "d9180a5730e950d2"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国3|@ripaojiedian, server: 166.0.27.137, port: 443, type: vless, uuid: ad45be81-9ba1-4a41-9326-f6ceb63eb79f, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: AMv7Xq2QzEDvAotwLRbqCk-WAxlQ7lxxYffMCvmNGhE, short-id: "5bcc25a95dcd415b"}, servername: www.samsung.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇬🇧 英国|@ripaojiedian, server: 8.208.101.215, port: 443, type: vless, uuid: 3112c3f2-7172-417d-bce6-d168135d1603, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: U6FtussjhSb81ka0z9IDf1n80syjsczIDrRTdmzyeGM, short-id: "5a6f99962a27cdbc"}, servername: www.ebay.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 日本|@ripaojiedian, server: 116.213.43.43, port: 11101, type: vless, uuid: ca69a29d-60ef-433a-91bc-27537be993c8, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: 2eUT-b2e2lghUKWM3qf8uI3_Dphg9whKrQ08o4S-bzw, short-id: "82f99830e7b834e2"}, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 47.84.39.7, port: 443, type: vless, uuid: a6fd460c-88bd-4425-bb56-2b73d29455cc, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: EXPjsObdfDnKuRmw4-A9_G4k-WP2cUXuuvUo8It1sAo, short-id: "4d1244cd42a20e6c"}, servername: www.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇰🇷 韩国|@ripaojiedian, server: 43.108.109.112, port: 443, type: vless, uuid: 4ded3111-b418-475a-93de-0360932508b2, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: vrFq4-k-eiTSyRF3T3e7Fqmlv4XSKmByKYsw55zeX3w, short-id: "b79a86e2b1a586a0"}, servername: www.samsung.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇹🇭 泰国|@ripaojiedian, server: 47.81.32.116, port: 443, type: vless, uuid: 33330382-a046-428d-9e95-9aae8bd6b90e, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: P3MHfKzFZhV5TRjdEj2r43fUr24iijLqB_k7rbSR2Bg, short-id: "4446248c38c846e6"}, servername: www.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇵🇭 菲律宾|@ripaojiedian, server: 47.80.76.105, port: 443, type: vless, uuid: ecdcc5d3-644a-4606-9e9e-130315da68cd, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: T7_XLYoPP1_kxIaOov9SovRMk-P1mS-FRhdWueHxaR0, short-id: "58aa532948cab4a4"}, servername: www.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇲🇾 马来西亚|@ripaojiedian, server: 47.250.146.252, port: 443, type: vless, uuid: 7a09c6e0-ad6e-4f96-980e-e0b198bb722f, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: SJyvyV7tQNPeJR-dnV11hve50q-En-mhh2eDXMX16C4, short-id: "2fbe9d45d0754b78"}, servername: www.ebay.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇮🇩 印尼|@ripaojiedian, server: 147.139.197.200, port: 443, type: vless, uuid: a197af05-7048-478e-8d99-c3151adb4064, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: ulPGCwIg38AVGww0FBfCNROmu_0N1hykbHbhcAFgcl0, short-id: "6135361d11cc2b31"}, servername: www.ebay.com, client-fingerprint: chrome, network: tcp, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -71,16 +78,23 @@ proxy-groups:
       - DIRECT
       - 🇮🇹 意大利|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇫🇷 法国|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇹🇭 泰国|@ripaojiedian
+      - 🇵🇭 菲律宾|@ripaojiedian
+      - 🇲🇾 马来西亚|@ripaojiedian
+      - 🇮🇩 印尼|@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -89,16 +103,23 @@ proxy-groups:
     proxies:
       - 🇮🇹 意大利|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇫🇷 法国|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇹🇭 泰国|@ripaojiedian
+      - 🇵🇭 菲律宾|@ripaojiedian
+      - 🇲🇾 马来西亚|@ripaojiedian
+      - 🇮🇩 印尼|@ripaojiedian
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -107,16 +128,23 @@ proxy-groups:
       - 🎯 全球直连
       - 🇮🇹 意大利|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇫🇷 法国|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇹🇭 泰国|@ripaojiedian
+      - 🇵🇭 菲律宾|@ripaojiedian
+      - 🇲🇾 马来西亚|@ripaojiedian
+      - 🇮🇩 印尼|@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
@@ -124,16 +152,23 @@ proxy-groups:
       - 🎯 全球直连
       - 🇮🇹 意大利|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇫🇷 法国|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇹🇭 泰国|@ripaojiedian
+      - 🇵🇭 菲律宾|@ripaojiedian
+      - 🇲🇾 马来西亚|@ripaojiedian
+      - 🇮🇩 印尼|@ripaojiedian
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -141,16 +176,23 @@ proxy-groups:
       - 🚀 节点选择
       - 🇮🇹 意大利|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇫🇷 法国|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇹🇭 泰国|@ripaojiedian
+      - 🇵🇭 菲律宾|@ripaojiedian
+      - 🇲🇾 马来西亚|@ripaojiedian
+      - 🇮🇩 印尼|@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -158,16 +200,23 @@ proxy-groups:
       - 🎯 全球直连
       - 🇮🇹 意大利|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇫🇷 法国|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇹🇭 泰国|@ripaojiedian
+      - 🇵🇭 菲律宾|@ripaojiedian
+      - 🇲🇾 马来西亚|@ripaojiedian
+      - 🇮🇩 印尼|@ripaojiedian
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -176,16 +225,23 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇮🇹 意大利|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇫🇷 法国|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇹🇭 泰国|@ripaojiedian
+      - 🇵🇭 菲律宾|@ripaojiedian
+      - 🇲🇾 马来西亚|@ripaojiedian
+      - 🇮🇩 印尼|@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -210,16 +266,23 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇮🇹 意大利|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇫🇷 法国|@ripaojiedian
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇹🇼 台湾|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇩🇪 德国|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇹🇭 泰国|@ripaojiedian
+      - 🇵🇭 菲律宾|@ripaojiedian
+      - 🇲🇾 马来西亚|@ripaojiedian
+      - 🇮🇩 印尼|@ripaojiedian
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -306,7 +369,6 @@ rules:
   - DOMAIN-KEYWORD,guanggao,🛑 全球拦截
   - DOMAIN-KEYWORD,omgmta,🛑 全球拦截
   - DOMAIN-KEYWORD,omniture,🛑 全球拦截
-  - DOMAIN-KEYWORD,openx,🛑 全球拦截
   - DOMAIN-KEYWORD,partnerad,🛑 全球拦截
   - DOMAIN-KEYWORD,pingfore,🛑 全球拦截
   - DOMAIN-KEYWORD,socdm,🛑 全球拦截
@@ -815,6 +877,9 @@ rules:
   - DOMAIN-SUFFIX,nend.net,🛑 全球拦截
   - DOMAIN-SUFFIX,netshelter.net,🛑 全球拦截
   - DOMAIN-SUFFIX,nexage.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,openx.net,🛑 全球拦截
+  - DOMAIN-SUFFIX,openxenterprise.com,🛑 全球拦截
+  - DOMAIN-SUFFIX,openxmarket.asia,🛑 全球拦截
   - DOMAIN-SUFFIX,owneriq.net,🛑 全球拦截
   - DOMAIN-SUFFIX,pixels.asia,🛑 全球拦截
   - DOMAIN-SUFFIX,plista.com,🛑 全球拦截
@@ -1894,23 +1959,23 @@ rules:
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
   - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt4-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt5-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt6-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
-  - DOMAIN,mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt1.mobile-gtalk.l.google.com,📢 谷歌FCM
+  - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt2.mobile-gtalk.l.google.com,📢 谷歌FCM
+  - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt3.mobile-gtalk.l.google.com,📢 谷歌FCM
+  - DOMAIN,alt4-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt4.mobile-gtalk.l.google.com,📢 谷歌FCM
+  - DOMAIN,alt5-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt5.mobile-gtalk.l.google.com,📢 谷歌FCM
+  - DOMAIN,alt6-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt6.mobile-gtalk.l.google.com,📢 谷歌FCM
+  - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt7.mobile-gtalk.l.google.com,📢 谷歌FCM
+  - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt8.mobile-gtalk.l.google.com,📢 谷歌FCM
   - DOMAIN,mobile-gtalk.l.google.com,📢 谷歌FCM
+  - DOMAIN,mtalk.google.com,📢 谷歌FCM
   - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
@@ -2105,53 +2170,6 @@ rules:
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,anthropic,🌍 国外媒体
-  - DOMAIN-KEYWORD,claude,🌍 国外媒体
-  - DOMAIN-KEYWORD,openai,🌍 国外媒体
-  - DOMAIN,ai.google.dev,🌍 国外媒体
-  - DOMAIN,aistudio.google.com,🌍 国外媒体
-  - DOMAIN,api.githubcopilot.com,🌍 国外媒体
-  - DOMAIN,api.groq.com,🌍 国外媒体
-  - DOMAIN,api.together.xyz,🌍 国外媒体
-  - DOMAIN,bard.google.com,🌍 国外媒体
-  - DOMAIN,console.groq.com,🌍 国外媒体
-  - DOMAIN,copilot-proxy.githubusercontent.com,🌍 国外媒体
-  - DOMAIN,gemini.google.com,🌍 国外媒体
-  - DOMAIN,generativelanguage.googleapis.com,🌍 国外媒体
-  - DOMAIN,notebooklm.google.com,🌍 国外媒体
-  - DOMAIN,sydney.bing.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,ai.azure.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,anthropic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,bard.google.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,claude.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,claude.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,claudeusercontent.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,copilot.cloud.microsoft,🌍 国外媒体
-  - DOMAIN-SUFFIX,copilot.microsoft.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,cursor.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,cursor.sh,🌍 国外媒体
-  - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,gemini.google.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,grazie.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,grazie.aws.intellij.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,jetbrains.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,makersuite.google.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,meta.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,mistral.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,perplexity.ai,🌍 国外媒体
-  - DOMAIN-SUFFIX,sora.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,x.ai,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
@@ -2388,22 +2406,6 @@ rules:
   - DOMAIN-SUFFIX,olevod.io,🌍 国外媒体
   - DOMAIN-SUFFIX,olevod.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,olevodtv.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,openai,🌍 国外媒体
-  - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,stripe.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
@@ -2631,6 +2633,61 @@ rules:
   - DOMAIN-SUFFIX,vimeo.com,🚀 节点选择
   - DOMAIN-SUFFIX,vine.co,🚀 节点选择
   - DOMAIN-SUFFIX,vox-cdn.com,🚀 节点选择
+  - DOMAIN,ai.google.dev,🚀 节点选择
+  - DOMAIN,aistudio.google.com,🚀 节点选择
+  - DOMAIN,api.githubcopilot.com,🚀 节点选择
+  - DOMAIN,api.groq.com,🚀 节点选择
+  - DOMAIN,api.together.xyz,🚀 节点选择
+  - DOMAIN,bard.google.com,🚀 节点选择
+  - DOMAIN,console.groq.com,🚀 节点选择
+  - DOMAIN,copilot-proxy.githubusercontent.com,🚀 节点选择
+  - DOMAIN,gemini.google.com,🚀 节点选择
+  - DOMAIN,geminiweb-pa.clients.google.com,🚀 节点选择
+  - DOMAIN,geminiweb-pa.clients6.google.com,🚀 节点选择
+  - DOMAIN,generativelanguage.googleapis.com,🚀 节点选择
+  - DOMAIN,notebooklm-pa.googleapis.com,🚀 节点选择
+  - DOMAIN,notebooklm.google.com,🚀 节点选择
+  - DOMAIN,sydney.bing.com,🚀 节点选择
+  - DOMAIN-KEYWORD,anthropic,🚀 节点选择
+  - DOMAIN-KEYWORD,antigravity,🚀 节点选择
+  - DOMAIN-KEYWORD,claude,🚀 节点选择
+  - DOMAIN-KEYWORD,openai,🚀 节点选择
+  - DOMAIN-SUFFIX,ai.azure.com,🚀 节点选择
+  - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
+  - DOMAIN-SUFFIX,auth0.com,🚀 节点选择
+  - DOMAIN-SUFFIX,bard.google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,chatgpt.com,🚀 节点选择
+  - DOMAIN-SUFFIX,clau.de,🚀 节点选择
+  - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
+  - DOMAIN-SUFFIX,claude.com,🚀 节点选择
+  - DOMAIN-SUFFIX,claudeusercontent.com,🚀 节点选择
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🚀 节点选择
+  - DOMAIN-SUFFIX,copilot.cloud.microsoft,🚀 节点选择
+  - DOMAIN-SUFFIX,copilot.microsoft.com,🚀 节点选择
+  - DOMAIN-SUFFIX,cursor.com,🚀 节点选择
+  - DOMAIN-SUFFIX,cursor.sh,🚀 节点选择
+  - DOMAIN-SUFFIX,events.statsigapi.net,🚀 节点选择
+  - DOMAIN-SUFFIX,featuregates.org,🚀 节点选择
+  - DOMAIN-SUFFIX,gemini.google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,grazie.ai,🚀 节点选择
+  - DOMAIN-SUFFIX,grazie.aws.intellij.net,🚀 节点选择
+  - DOMAIN-SUFFIX,grok.com,🚀 节点选择
+  - DOMAIN-SUFFIX,identrust.com,🚀 节点选择
+  - DOMAIN-SUFFIX,intercom.io,🚀 节点选择
+  - DOMAIN-SUFFIX,intercomcdn.com,🚀 节点选择
+  - DOMAIN-SUFFIX,jetbrains.ai,🚀 节点选择
+  - DOMAIN-SUFFIX,makersuite.google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,meta.ai,🚀 节点选择
+  - DOMAIN-SUFFIX,mistral.ai,🚀 节点选择
+  - DOMAIN-SUFFIX,notebooklm.google,🚀 节点选择
+  - DOMAIN-SUFFIX,notebooklm.google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,oaistatic.com,🚀 节点选择
+  - DOMAIN-SUFFIX,oaiusercontent.com,🚀 节点选择
+  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🚀 节点选择
+  - DOMAIN-SUFFIX,perplexity.ai,🚀 节点选择
+  - DOMAIN-SUFFIX,sora.com,🚀 节点选择
+  - DOMAIN-SUFFIX,x.ai,🚀 节点选择
   - DOMAIN-SUFFIX,amazon.co.jp,🚀 节点选择
   - DOMAIN-SUFFIX,amazon.com,🚀 节点选择
   - DOMAIN-SUFFIX,amazonaws.com,🚀 节点选择
@@ -2780,8 +2837,23 @@ rules:
   - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+  - DOMAIN-KEYWORD,openai,🚀 节点选择
+  - DOMAIN-SUFFIX,auth0.com,🚀 节点选择
   - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,chatgpt.com,🚀 节点选择
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🚀 节点选择
+  - DOMAIN-SUFFIX,events.statsigapi.net,🚀 节点选择
+  - DOMAIN-SUFFIX,featuregates.org,🚀 节点选择
+  - DOMAIN-SUFFIX,identrust.com,🚀 节点选择
+  - DOMAIN-SUFFIX,intercom.io,🚀 节点选择
+  - DOMAIN-SUFFIX,intercomcdn.com,🚀 节点选择
+  - DOMAIN-SUFFIX,oaistatic.com,🚀 节点选择
+  - DOMAIN-SUFFIX,oaiusercontent.com,🚀 节点选择
+  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🚀 节点选择
+  - DOMAIN-SUFFIX,sentry.io,🚀 节点选择
+  - DOMAIN-SUFFIX,sora.com,🚀 节点选择
+  - DOMAIN-SUFFIX,stripe.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
