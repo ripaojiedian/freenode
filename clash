@@ -58,7 +58,6 @@ proxies:
   - {name: 🇹🇼 台湾2|@ripaojiedian, server: a54ge.df6h451rh.xin, port: 443, type: anytls, password: 0324fbc29561, client-fingerprint: chrome, udp: true, sni: docs.microsoft.com, skip-cert-verify: true}
   - {name: 🇺🇸 美国1|@ripaojiedian, server: 172.233.129.172, port: 443, type: vless, uuid: 40a4b915-5e6f-4316-9bb1-e899f30608e3, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: LWfC_chpo4uDtzJ9VVnuTcf6zTzWKx-LCJAE2Ltl7h4, short-id: "5818adc3"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: itunes.apple.com}, v2ray-http-upgrade: false}, udp: true}
   - {name: 🇹🇼 台湾3|@ripaojiedian, server: er8u54dh.df6h451rh.xin, port: 443, type: anytls, password: 2902c46c8493, udp: true, sni: px.ads.linkedin.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港|@ripaojiedian, server: jp2mqtt.jumpernode.site, port: 443, type: vless, uuid: 330a570e-c0ba-4a9d-8e37-d20540cc8eaa, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: KBPuCiAKJQQtlsodm5MIBFfYf-TGsrjCK5GGJzJJli4, short-id: "6a3c0a718181"}, servername: stg.nvbugspro.nvidia.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇮🇹 意大利2|@ripaojiedian, server: 202.50.253.18, port: 19999, type: ss, cipher: aes-256-gcm, password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=, udp: true}
   - {name: 🇯🇵 日本|@ripaojiedian, server: 172.105.203.15, port: 443, type: vless, uuid: c8c9b995-b4b9-4915-9c7d-dee94aa733ba, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA, short-id: "0784b134"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: itunes.apple.com}, v2ray-http-upgrade: false}, udp: true}
   - {name: 🇯🇵 日本1|@ripaojiedian, server: 139.162.91.228, port: 443, type: vless, uuid: 911dce8c-a2d7-4267-acb4-1dec7cc360c4, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: s73obybmPs4rzBkigf3zyIwAJWbRUnhPk3m6keetT3c, short-id: "d1244137"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: itunes.apple.com}, v2ray-http-upgrade: false}, udp: true}
@@ -69,6 +68,8 @@ proxies:
   - {name: 🇺🇸 美国2|@ripaojiedian, server: 172.233.142.149, port: 443, type: vless, uuid: 61e3954d-0d66-4b69-b6cd-9b4fc2352303, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: f9D1ZzG6vP1HgjCaCIutbykWkab8VEDuitwuwaeuBgY, short-id: "4206512a"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: itunes.apple.com}, v2ray-http-upgrade: false}, udp: true}
   - {name: 🇸🇬 新加坡|@ripaojiedian, server: 172.104.186.185, port: 443, type: vless, uuid: 87ff88cc-5c1f-4f46-86b8-c43f55b71dd2, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: xGPjO2ukRsGiMm-vAzcLcFYu5ivYe2paztFS64q3Bkw, short-id: "b29516da"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: itunes.apple.com}, v2ray-http-upgrade: false}, udp: true}
   - {name: 🇺🇸 美国|@ripaojiedian, server: 172.235.36.11, port: 443, type: vless, uuid: a15c47e7-0d24-4e82-a759-891d0e951a01, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: lhkyTN5zj2bK7HhMVfer5RoDz0K67YK8VyiiK8TvkEE, short-id: "afc7874d"}, servername: itunes.apple.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: itunes.apple.com}, v2ray-http-upgrade: false}, udp: true}
+  - {name: 🇭🇰 香港|@ripaojiedian, server: 216.236.51.44, port: 1891, type: vless, uuid: e9923122-5d88-43f1-8548-5771d7750ef5, tls: true, tfo: false, skip-cert-verify: true, servername: senflarelink-node-71i.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: senflarelink-node-71i.pages.dev}, v2ray-http-upgrade: false}, udp: true}
+  - {name: 🇭🇰 香港3|@ripaojiedian, server: 38.207.172.59, port: 28418, type: vless, uuid: e6552569-97ce-430c-a324-53ad1c546e05, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: mfxE6lW_fuPZKWtrySdTx9HOh0vtX3-7aMiYDCh2YCA, short-id: "ddd21e20"}, servername: op.gg, client-fingerprint: chrome, network: tcp, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -82,7 +83,6 @@ proxy-groups:
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇺🇸 美国1|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本1|@ripaojiedian
@@ -93,6 +93,8 @@ proxy-groups:
       - 🇺🇸 美国2|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -106,7 +108,6 @@ proxy-groups:
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇺🇸 美国1|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本1|@ripaojiedian
@@ -117,6 +118,8 @@ proxy-groups:
       - 🇺🇸 美国2|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -130,7 +133,6 @@ proxy-groups:
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇺🇸 美国1|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本1|@ripaojiedian
@@ -141,6 +143,8 @@ proxy-groups:
       - 🇺🇸 美国2|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
@@ -153,7 +157,6 @@ proxy-groups:
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇺🇸 美国1|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本1|@ripaojiedian
@@ -164,6 +167,8 @@ proxy-groups:
       - 🇺🇸 美国2|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -176,7 +181,6 @@ proxy-groups:
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇺🇸 美国1|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本1|@ripaojiedian
@@ -187,6 +191,8 @@ proxy-groups:
       - 🇺🇸 美国2|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -199,7 +205,6 @@ proxy-groups:
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇺🇸 美国1|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本1|@ripaojiedian
@@ -210,6 +215,8 @@ proxy-groups:
       - 🇺🇸 美国2|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -223,7 +230,6 @@ proxy-groups:
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇺🇸 美国1|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本1|@ripaojiedian
@@ -234,6 +240,8 @@ proxy-groups:
       - 🇺🇸 美国2|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -263,7 +271,6 @@ proxy-groups:
       - 🇹🇼 台湾2|@ripaojiedian
       - 🇺🇸 美国1|@ripaojiedian
       - 🇹🇼 台湾3|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
       - 🇮🇹 意大利2|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇯🇵 日本1|@ripaojiedian
@@ -274,6 +281,8 @@ proxy-groups:
       - 🇺🇸 美国2|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
